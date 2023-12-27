@@ -1,0 +1,467 @@
+Classic Timing Analyzer report for counter_16
+Mon Mar 14 20:42:16 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'PRN'
+  6. Clock Setup: 'CP'
+  7. Clock Setup: 'CLRN'
+  8. Clock Hold: 'PRN'
+  9. Clock Hold: 'CLRN'
+ 10. tsu
+ 11. tco
+ 12. tpd
+ 13. th
+ 14. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                               ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-----------------+-----------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                      ; From            ; To              ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-----------------+-----------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 4.743 ns                         ; CLRN            ; inst3~_emulated ; --         ; PRN      ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 18.048 ns                        ; inst3~_emulated ; Q3              ; CP         ; --       ; 0            ;
+; Worst-case tpd               ; N/A                                      ; None          ; 13.815 ns                        ; CLRN            ; Q3              ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; 4.501 ns                         ; PRN             ; inst2~_emulated ; --         ; CP       ; 0            ;
+; Clock Setup: 'PRN'           ; N/A                                      ; None          ; 141.90 MHz ( period = 7.047 ns ) ; inst3~_emulated ; inst3~_emulated ; PRN        ; PRN      ; 0            ;
+; Clock Setup: 'CLRN'          ; N/A                                      ; None          ; 142.01 MHz ( period = 7.042 ns ) ; inst3~_emulated ; inst3~_emulated ; CLRN       ; CLRN     ; 0            ;
+; Clock Setup: 'CP'            ; N/A                                      ; None          ; 324.04 MHz ( period = 3.086 ns ) ; inst~_emulated  ; inst~_emulated  ; CP         ; CP       ; 0            ;
+; Clock Hold: 'PRN'            ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; inst3~_emulated ; inst3~_emulated ; PRN        ; PRN      ; 2            ;
+; Clock Hold: 'CLRN'           ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; inst3~_emulated ; inst3~_emulated ; CLRN       ; CLRN     ; 2            ;
+; Total number of failed paths ;                                          ;               ;                                  ;                 ;                 ;            ;          ; 4            ;
++------------------------------+------------------------------------------+---------------+----------------------------------+-----------------+-----------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2C8Q208C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; PRN             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; CP              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; CLRN            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'PRN'                                                                                                                                                                                     ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From            ; To              ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 141.90 MHz ( period = 7.047 ns )               ; inst3~_emulated ; inst3~_emulated ; PRN        ; PRN      ; None                        ; None                      ; 2.716 ns                ;
+; N/A   ; 303.67 MHz ( period = 3.293 ns )               ; inst2~_emulated ; inst2~_emulated ; PRN        ; PRN      ; None                        ; None                      ; 1.497 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst1~_emulated ; inst1~_emulated ; PRN        ; PRN      ; None                        ; None                      ; 1.326 ns                ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'CP'                                                                                                                                                                                      ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From            ; To              ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 324.04 MHz ( period = 3.086 ns )               ; inst~_emulated  ; inst~_emulated  ; CP         ; CP       ; None                        ; None                      ; 2.822 ns                ;
+; N/A   ; 335.57 MHz ( period = 2.980 ns )               ; inst3~_emulated ; inst3~_emulated ; CP         ; CP       ; None                        ; None                      ; 2.716 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; inst2~_emulated ; inst2~_emulated ; CP         ; CP       ; None                        ; None                      ; 1.497 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; inst1~_emulated ; inst1~_emulated ; CP         ; CP       ; None                        ; None                      ; 1.326 ns                ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'CLRN'                                                                                                                                                                                    ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From            ; To              ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 142.01 MHz ( period = 7.042 ns )               ; inst3~_emulated ; inst3~_emulated ; CLRN       ; CLRN     ; None                        ; None                      ; 2.716 ns                ;
+; N/A   ; 251.07 MHz ( period = 3.983 ns )               ; inst2~_emulated ; inst2~_emulated ; CLRN       ; CLRN     ; None                        ; None                      ; 1.497 ns                ;
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst1~_emulated ; inst1~_emulated ; CLRN       ; CLRN     ; None                        ; None                      ; 1.326 ns                ;
++-------+------------------------------------------------+-----------------+-----------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'PRN'                                                                                                                                                                         ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From            ; To              ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; inst3~_emulated ; inst3~_emulated ; PRN        ; PRN      ; None                       ; None                       ; 2.716 ns                 ;
+; Not operational: Clock Skew > Data Delay ; inst2~_emulated ; inst2~_emulated ; PRN        ; PRN      ; None                       ; None                       ; 1.497 ns                 ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'CLRN'                                                                                                                                                                        ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From            ; To              ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; inst3~_emulated ; inst3~_emulated ; CLRN       ; CLRN     ; None                       ; None                       ; 2.716 ns                 ;
+; Not operational: Clock Skew > Data Delay ; inst2~_emulated ; inst2~_emulated ; CLRN       ; CLRN     ; None                       ; None                       ; 1.497 ns                 ;
++------------------------------------------+-----------------+-----------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------+
+; tsu                                                                   ;
++-------+--------------+------------+------+-----------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To              ; To Clock ;
++-------+--------------+------------+------+-----------------+----------+
+; N/A   ; None         ; 4.743 ns   ; CLRN ; inst3~_emulated ; PRN      ;
+; N/A   ; None         ; 4.144 ns   ; PRN  ; inst3~_emulated ; PRN      ;
+; N/A   ; None         ; 4.001 ns   ; CLRN ; inst3~_emulated ; CLRN     ;
+; N/A   ; None         ; 3.402 ns   ; PRN  ; inst3~_emulated ; CLRN     ;
+; N/A   ; None         ; 1.894 ns   ; CLRN ; inst~_emulated  ; CP       ;
+; N/A   ; None         ; 1.157 ns   ; PRN  ; inst~_emulated  ; CP       ;
+; N/A   ; None         ; 0.105 ns   ; CLRN ; inst1~_emulated ; PRN      ;
+; N/A   ; None         ; 0.058 ns   ; PRN  ; inst1~_emulated ; PRN      ;
+; N/A   ; None         ; -0.032 ns  ; CLRN ; inst2~_emulated ; PRN      ;
+; N/A   ; None         ; -0.079 ns  ; CLRN ; inst2~_emulated ; CLRN     ;
+; N/A   ; None         ; -0.632 ns  ; CLRN ; inst1~_emulated ; CLRN     ;
+; N/A   ; None         ; -0.679 ns  ; PRN  ; inst1~_emulated ; CLRN     ;
+; N/A   ; None         ; -0.774 ns  ; PRN  ; inst2~_emulated ; PRN      ;
+; N/A   ; None         ; -0.821 ns  ; PRN  ; inst2~_emulated ; CLRN     ;
+; N/A   ; None         ; -1.253 ns  ; CLRN ; inst3~_emulated ; CP       ;
+; N/A   ; None         ; -1.824 ns  ; CLRN ; inst1~_emulated ; CP       ;
+; N/A   ; None         ; -1.852 ns  ; PRN  ; inst3~_emulated ; CP       ;
+; N/A   ; None         ; -1.871 ns  ; PRN  ; inst1~_emulated ; CP       ;
+; N/A   ; None         ; -3.493 ns  ; CLRN ; inst2~_emulated ; CP       ;
+; N/A   ; None         ; -4.235 ns  ; PRN  ; inst2~_emulated ; CP       ;
++-------+--------------+------------+------+-----------------+----------+
+
+
++-----------------------------------------------------------------------+
+; tco                                                                   ;
++-------+--------------+------------+-----------------+----+------------+
+; Slack ; Required tco ; Actual tco ; From            ; To ; From Clock ;
++-------+--------------+------------+-----------------+----+------------+
+; N/A   ; None         ; 18.048 ns  ; inst3~_emulated ; Q3 ; CP         ;
+; N/A   ; None         ; 16.856 ns  ; inst3~_emulated ; Q3 ; CLRN       ;
+; N/A   ; None         ; 16.119 ns  ; inst3~_emulated ; Q3 ; PRN        ;
+; N/A   ; None         ; 14.667 ns  ; inst2~_emulated ; Q2 ; CP         ;
+; N/A   ; None         ; 13.475 ns  ; inst2~_emulated ; Q2 ; CLRN       ;
+; N/A   ; None         ; 12.738 ns  ; inst2~_emulated ; Q2 ; PRN        ;
+; N/A   ; None         ; 12.577 ns  ; inst1~_emulated ; Q1 ; CP         ;
+; N/A   ; None         ; 11.385 ns  ; inst1~_emulated ; Q1 ; CLRN       ;
+; N/A   ; None         ; 10.648 ns  ; inst1~_emulated ; Q1 ; PRN        ;
+; N/A   ; None         ; 10.207 ns  ; inst~_emulated  ; Q0 ; CP         ;
++-------+--------------+------------+-----------------+----+------------+
+
+
++---------------------------------------------------------+
+; tpd                                                     ;
++-------+-------------------+-----------------+------+----+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
++-------+-------------------+-----------------+------+----+
+; N/A   ; None              ; 13.815 ns       ; CLRN ; Q3 ;
+; N/A   ; None              ; 13.216 ns       ; PRN  ; Q3 ;
+; N/A   ; None              ; 9.413 ns        ; CLRN ; Q2 ;
+; N/A   ; None              ; 9.163 ns        ; CLRN ; Q1 ;
+; N/A   ; None              ; 9.116 ns        ; PRN  ; Q1 ;
+; N/A   ; None              ; 9.015 ns        ; CLRN ; Q0 ;
+; N/A   ; None              ; 8.671 ns        ; PRN  ; Q2 ;
+; N/A   ; None              ; 8.278 ns        ; PRN  ; Q0 ;
++-------+-------------------+-----------------+------+----+
+
+
++-----------------------------------------------------------------------------+
+; th                                                                          ;
++---------------+-------------+-----------+------+-----------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To              ; To Clock ;
++---------------+-------------+-----------+------+-----------------+----------+
+; N/A           ; None        ; 4.501 ns  ; PRN  ; inst2~_emulated ; CP       ;
+; N/A           ; None        ; 3.759 ns  ; CLRN ; inst2~_emulated ; CP       ;
+; N/A           ; None        ; 3.309 ns  ; PRN  ; inst2~_emulated ; CLRN     ;
+; N/A           ; None        ; 2.572 ns  ; PRN  ; inst2~_emulated ; PRN      ;
+; N/A           ; None        ; 2.567 ns  ; CLRN ; inst2~_emulated ; CLRN     ;
+; N/A           ; None        ; 2.137 ns  ; PRN  ; inst1~_emulated ; CP       ;
+; N/A           ; None        ; 2.118 ns  ; PRN  ; inst3~_emulated ; CP       ;
+; N/A           ; None        ; 2.090 ns  ; CLRN ; inst1~_emulated ; CP       ;
+; N/A           ; None        ; 1.830 ns  ; CLRN ; inst2~_emulated ; PRN      ;
+; N/A           ; None        ; 1.519 ns  ; CLRN ; inst3~_emulated ; CP       ;
+; N/A           ; None        ; 0.945 ns  ; PRN  ; inst1~_emulated ; CLRN     ;
+; N/A           ; None        ; 0.926 ns  ; PRN  ; inst3~_emulated ; CLRN     ;
+; N/A           ; None        ; 0.898 ns  ; CLRN ; inst1~_emulated ; CLRN     ;
+; N/A           ; None        ; 0.327 ns  ; CLRN ; inst3~_emulated ; CLRN     ;
+; N/A           ; None        ; 0.208 ns  ; PRN  ; inst1~_emulated ; PRN      ;
+; N/A           ; None        ; 0.189 ns  ; PRN  ; inst3~_emulated ; PRN      ;
+; N/A           ; None        ; 0.161 ns  ; CLRN ; inst1~_emulated ; PRN      ;
+; N/A           ; None        ; -0.410 ns ; CLRN ; inst3~_emulated ; PRN      ;
+; N/A           ; None        ; -0.891 ns ; PRN  ; inst~_emulated  ; CP       ;
+; N/A           ; None        ; -1.628 ns ; CLRN ; inst~_emulated  ; CP       ;
++---------------+-------------+-----------+------+-----------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Mon Mar 14 20:42:16 2022
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off counter_16 -c counter_16 --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "inst2~latch" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "PRN" is an undefined clock
+    Info: Assuming node "CP" is an undefined clock
+    Info: Assuming node "CLRN" is an undefined clock
+Warning: Found 7 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "inst2~latch" as buffer
+    Info: Detected ripple clock "inst~_emulated" as buffer
+    Info: Detected gated clock "inst~head_lut" as buffer
+    Info: Detected gated clock "inst2~head_lut" as buffer
+    Info: Detected ripple clock "inst1~_emulated" as buffer
+    Info: Detected gated clock "inst1~head_lut" as buffer
+    Info: Detected ripple clock "inst2~_emulated" as buffer
+Info: Clock "PRN" has Internal fmax of 141.9 MHz between source register "inst3~_emulated" and destination register "inst3~_emulated" (period= 7.047 ns)
+    Info: + Longest register to register delay is 2.716 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: 2: + IC(1.121 ns) + CELL(0.206 ns) = 1.327 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(1.075 ns) + CELL(0.206 ns) = 2.608 ns; Loc. = LCCOMB_X29_Y4_N10; Fanout = 1; COMB Node = 'inst3~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.716 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 0.520 ns ( 19.15 % )
+        Info: Total interconnect delay = 2.196 ns ( 80.85 % )
+    Info: - Smallest clock skew is -4.067 ns
+        Info: + Shortest clock path from clock "PRN" to destination register is 5.039 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+            Info: 2: + IC(2.151 ns) + CELL(0.206 ns) = 3.341 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 3: + IC(1.032 ns) + CELL(0.666 ns) = 5.039 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 1.856 ns ( 36.83 % )
+            Info: Total interconnect delay = 3.183 ns ( 63.17 % )
+        Info: - Longest clock path from clock "PRN" to source register is 9.106 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+            Info: 2: + IC(2.153 ns) + CELL(0.206 ns) = 3.343 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+            Info: 3: + IC(0.350 ns) + CELL(0.970 ns) = 4.663 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+            Info: 4: + IC(0.431 ns) + CELL(0.206 ns) = 5.300 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+            Info: 5: + IC(0.333 ns) + CELL(0.970 ns) = 6.603 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+            Info: 6: + IC(0.435 ns) + CELL(0.370 ns) = 7.408 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 7: + IC(1.032 ns) + CELL(0.666 ns) = 9.106 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 4.372 ns ( 48.01 % )
+            Info: Total interconnect delay = 4.734 ns ( 51.99 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Micro setup delay of destination is -0.040 ns
+Info: Clock "CP" has Internal fmax of 324.04 MHz between source register "inst~_emulated" and destination register "inst~_emulated" (period= 3.086 ns)
+    Info: + Longest register to register delay is 2.822 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+        Info: 2: + IC(1.069 ns) + CELL(0.370 ns) = 1.439 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+        Info: 3: + IC(1.069 ns) + CELL(0.206 ns) = 2.714 ns; Loc. = LCCOMB_X29_Y4_N16; Fanout = 1; COMB Node = 'inst~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.822 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+        Info: Total cell delay = 0.684 ns ( 24.24 % )
+        Info: Total interconnect delay = 2.138 ns ( 75.76 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "CP" to destination register is 3.529 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.150 ns) = 1.150 ns; Loc. = PIN_132; Fanout = 1; CLK Node = 'CP'
+            Info: 2: + IC(1.713 ns) + CELL(0.666 ns) = 3.529 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+            Info: Total cell delay = 1.816 ns ( 51.46 % )
+            Info: Total interconnect delay = 1.713 ns ( 48.54 % )
+        Info: - Longest clock path from clock "CP" to source register is 3.529 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.150 ns) = 1.150 ns; Loc. = PIN_132; Fanout = 1; CLK Node = 'CP'
+            Info: 2: + IC(1.713 ns) + CELL(0.666 ns) = 3.529 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+            Info: Total cell delay = 1.816 ns ( 51.46 % )
+            Info: Total interconnect delay = 1.713 ns ( 48.54 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Micro setup delay of destination is -0.040 ns
+Info: Clock "CLRN" has Internal fmax of 142.01 MHz between source register "inst3~_emulated" and destination register "inst3~_emulated" (period= 7.042 ns)
+    Info: + Longest register to register delay is 2.716 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: 2: + IC(1.121 ns) + CELL(0.206 ns) = 1.327 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(1.075 ns) + CELL(0.206 ns) = 2.608 ns; Loc. = LCCOMB_X29_Y4_N10; Fanout = 1; COMB Node = 'inst3~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.716 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 0.520 ns ( 19.15 % )
+        Info: Total interconnect delay = 2.196 ns ( 80.85 % )
+    Info: - Smallest clock skew is -4.062 ns
+        Info: + Shortest clock path from clock "CLRN" to destination register is 5.781 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+            Info: 2: + IC(2.495 ns) + CELL(0.614 ns) = 4.083 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 3: + IC(1.032 ns) + CELL(0.666 ns) = 5.781 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 2.254 ns ( 38.99 % )
+            Info: Total interconnect delay = 3.527 ns ( 61.01 % )
+        Info: - Longest clock path from clock "CLRN" to source register is 9.843 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+            Info: 2: + IC(2.492 ns) + CELL(0.614 ns) = 4.080 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+            Info: 3: + IC(0.350 ns) + CELL(0.970 ns) = 5.400 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+            Info: 4: + IC(0.431 ns) + CELL(0.206 ns) = 6.037 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+            Info: 5: + IC(0.333 ns) + CELL(0.970 ns) = 7.340 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+            Info: 6: + IC(0.435 ns) + CELL(0.370 ns) = 8.145 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 7: + IC(1.032 ns) + CELL(0.666 ns) = 9.843 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 4.770 ns ( 48.46 % )
+            Info: Total interconnect delay = 5.073 ns ( 51.54 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Micro setup delay of destination is -0.040 ns
+Warning: Circuit may not operate. Detected 2 non-operational path(s) clocked by clock "PRN" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "inst3~_emulated" and destination pin or register "inst3~_emulated" for clock "PRN" (Hold time is 1.353 ns)
+    Info: + Largest clock skew is 4.067 ns
+        Info: + Longest clock path from clock "PRN" to destination register is 9.106 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+            Info: 2: + IC(2.153 ns) + CELL(0.206 ns) = 3.343 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+            Info: 3: + IC(0.350 ns) + CELL(0.970 ns) = 4.663 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+            Info: 4: + IC(0.431 ns) + CELL(0.206 ns) = 5.300 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+            Info: 5: + IC(0.333 ns) + CELL(0.970 ns) = 6.603 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+            Info: 6: + IC(0.435 ns) + CELL(0.370 ns) = 7.408 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 7: + IC(1.032 ns) + CELL(0.666 ns) = 9.106 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 4.372 ns ( 48.01 % )
+            Info: Total interconnect delay = 4.734 ns ( 51.99 % )
+        Info: - Shortest clock path from clock "PRN" to source register is 5.039 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+            Info: 2: + IC(2.151 ns) + CELL(0.206 ns) = 3.341 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 3: + IC(1.032 ns) + CELL(0.666 ns) = 5.039 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 1.856 ns ( 36.83 % )
+            Info: Total interconnect delay = 3.183 ns ( 63.17 % )
+    Info: - Micro clock to output delay of source is 0.304 ns
+    Info: - Shortest register to register delay is 2.716 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: 2: + IC(1.121 ns) + CELL(0.206 ns) = 1.327 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(1.075 ns) + CELL(0.206 ns) = 2.608 ns; Loc. = LCCOMB_X29_Y4_N10; Fanout = 1; COMB Node = 'inst3~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.716 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 0.520 ns ( 19.15 % )
+        Info: Total interconnect delay = 2.196 ns ( 80.85 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+Warning: Circuit may not operate. Detected 2 non-operational path(s) clocked by clock "CLRN" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "inst3~_emulated" and destination pin or register "inst3~_emulated" for clock "CLRN" (Hold time is 1.348 ns)
+    Info: + Largest clock skew is 4.062 ns
+        Info: + Longest clock path from clock "CLRN" to destination register is 9.843 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+            Info: 2: + IC(2.492 ns) + CELL(0.614 ns) = 4.080 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+            Info: 3: + IC(0.350 ns) + CELL(0.970 ns) = 5.400 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+            Info: 4: + IC(0.431 ns) + CELL(0.206 ns) = 6.037 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+            Info: 5: + IC(0.333 ns) + CELL(0.970 ns) = 7.340 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+            Info: 6: + IC(0.435 ns) + CELL(0.370 ns) = 8.145 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 7: + IC(1.032 ns) + CELL(0.666 ns) = 9.843 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 4.770 ns ( 48.46 % )
+            Info: Total interconnect delay = 5.073 ns ( 51.54 % )
+        Info: - Shortest clock path from clock "CLRN" to source register is 5.781 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+            Info: 2: + IC(2.495 ns) + CELL(0.614 ns) = 4.083 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+            Info: 3: + IC(1.032 ns) + CELL(0.666 ns) = 5.781 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+            Info: Total cell delay = 2.254 ns ( 38.99 % )
+            Info: Total interconnect delay = 3.527 ns ( 61.01 % )
+    Info: - Micro clock to output delay of source is 0.304 ns
+    Info: - Shortest register to register delay is 2.716 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: 2: + IC(1.121 ns) + CELL(0.206 ns) = 1.327 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(1.075 ns) + CELL(0.206 ns) = 2.608 ns; Loc. = LCCOMB_X29_Y4_N10; Fanout = 1; COMB Node = 'inst3~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 2.716 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 0.520 ns ( 19.15 % )
+        Info: Total interconnect delay = 2.196 ns ( 80.85 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+Info: tsu for register "inst3~_emulated" (data pin = "CLRN", clock pin = "PRN") is 4.743 ns
+    Info: + Longest pin to register delay is 9.822 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+        Info: 2: + IC(6.809 ns) + CELL(0.650 ns) = 8.433 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(1.075 ns) + CELL(0.206 ns) = 9.714 ns; Loc. = LCCOMB_X29_Y4_N10; Fanout = 1; COMB Node = 'inst3~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 9.822 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 1.938 ns ( 19.73 % )
+        Info: Total interconnect delay = 7.884 ns ( 80.27 % )
+    Info: + Micro setup delay of destination is -0.040 ns
+    Info: - Shortest clock path from clock "PRN" to destination register is 5.039 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+        Info: 2: + IC(2.151 ns) + CELL(0.206 ns) = 3.341 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+        Info: 3: + IC(1.032 ns) + CELL(0.666 ns) = 5.039 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 1.856 ns ( 36.83 % )
+        Info: Total interconnect delay = 3.183 ns ( 63.17 % )
+Info: tco from clock "CP" to destination pin "Q3" through register "inst3~_emulated" is 18.048 ns
+    Info: + Longest clock path from clock "CP" to source register is 11.035 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.150 ns) = 1.150 ns; Loc. = PIN_132; Fanout = 1; CLK Node = 'CP'
+        Info: 2: + IC(1.713 ns) + CELL(0.970 ns) = 3.833 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+        Info: 3: + IC(1.069 ns) + CELL(0.370 ns) = 5.272 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+        Info: 4: + IC(0.350 ns) + CELL(0.970 ns) = 6.592 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+        Info: 5: + IC(0.431 ns) + CELL(0.206 ns) = 7.229 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+        Info: 6: + IC(0.333 ns) + CELL(0.970 ns) = 8.532 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+        Info: 7: + IC(0.435 ns) + CELL(0.370 ns) = 9.337 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+        Info: 8: + IC(1.032 ns) + CELL(0.666 ns) = 11.035 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: Total cell delay = 5.672 ns ( 51.40 % )
+        Info: Total interconnect delay = 5.363 ns ( 48.60 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Longest register to pin delay is 6.709 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X29_Y4_N11; Fanout = 1; REG Node = 'inst3~_emulated'
+        Info: 2: + IC(1.121 ns) + CELL(0.206 ns) = 1.327 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+        Info: 3: + IC(2.276 ns) + CELL(3.106 ns) = 6.709 ns; Loc. = PIN_145; Fanout = 0; PIN Node = 'Q3'
+        Info: Total cell delay = 3.312 ns ( 49.37 % )
+        Info: Total interconnect delay = 3.397 ns ( 50.63 % )
+Info: Longest tpd from source pin "CLRN" to destination pin "Q3" is 13.815 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_77; Fanout = 6; CLK Node = 'CLRN'
+    Info: 2: + IC(6.809 ns) + CELL(0.650 ns) = 8.433 ns; Loc. = LCCOMB_X30_Y3_N10; Fanout = 2; COMB Node = 'inst3~head_lut'
+    Info: 3: + IC(2.276 ns) + CELL(3.106 ns) = 13.815 ns; Loc. = PIN_145; Fanout = 0; PIN Node = 'Q3'
+    Info: Total cell delay = 4.730 ns ( 34.24 % )
+    Info: Total interconnect delay = 9.085 ns ( 65.76 % )
+Info: th for register "inst2~_emulated" (data pin = "PRN", clock pin = "CP") is 4.501 ns
+    Info: + Longest clock path from clock "CP" to destination register is 8.228 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.150 ns) = 1.150 ns; Loc. = PIN_132; Fanout = 1; CLK Node = 'CP'
+        Info: 2: + IC(1.713 ns) + CELL(0.970 ns) = 3.833 ns; Loc. = LCFF_X29_Y4_N17; Fanout = 1; REG Node = 'inst~_emulated'
+        Info: 3: + IC(1.069 ns) + CELL(0.370 ns) = 5.272 ns; Loc. = LCCOMB_X30_Y3_N0; Fanout = 3; COMB Node = 'inst~head_lut'
+        Info: 4: + IC(0.350 ns) + CELL(0.970 ns) = 6.592 ns; Loc. = LCFF_X30_Y3_N29; Fanout = 1; REG Node = 'inst1~_emulated'
+        Info: 5: + IC(0.431 ns) + CELL(0.206 ns) = 7.229 ns; Loc. = LCCOMB_X30_Y3_N6; Fanout = 3; COMB Node = 'inst1~head_lut'
+        Info: 6: + IC(0.333 ns) + CELL(0.666 ns) = 8.228 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+        Info: Total cell delay = 4.332 ns ( 52.65 % )
+        Info: Total interconnect delay = 3.896 ns ( 47.35 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+    Info: - Shortest pin to register delay is 4.033 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.984 ns) = 0.984 ns; Loc. = PIN_80; Fanout = 6; CLK Node = 'PRN'
+        Info: 2: + IC(2.151 ns) + CELL(0.206 ns) = 3.341 ns; Loc. = LCCOMB_X30_Y3_N26; Fanout = 3; COMB Node = 'inst2~head_lut'
+        Info: 3: + IC(0.378 ns) + CELL(0.206 ns) = 3.925 ns; Loc. = LCCOMB_X30_Y3_N8; Fanout = 1; COMB Node = 'inst2~data_lut'
+        Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 4.033 ns; Loc. = LCFF_X30_Y3_N9; Fanout = 1; REG Node = 'inst2~_emulated'
+        Info: Total cell delay = 1.504 ns ( 37.29 % )
+        Info: Total interconnect delay = 2.529 ns ( 62.71 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 213 megabytes
+    Info: Processing ended: Mon Mar 14 20:42:16 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

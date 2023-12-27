@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 19 00:20:43 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : counter_with_set_8_advanced
+Top-level Entity Name : counter_with_set_8_advanced
+Family : Cyclone II
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,43 @@
+|multiplexer2_1
+Y0 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst8.IN0
+BY => inst8.IN1
+BY => inst7.IN1
+BY => inst6.IN1
+BY => inst5.IN1
+BY => inst4.IN1
+BY => inst3.IN1
+BY => inst2.IN1
+BY => inst1.IN1
+A0 => inst29.IN0
+AY => inst29.IN1
+AY => inst27.IN1
+AY => inst25.IN1
+AY => inst23.IN1
+AY => inst21.IN1
+AY => inst19.IN1
+AY => inst17.IN1
+AY => inst.IN1
+Y1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+B1 => inst7.IN0
+A1 => inst27.IN0
+Y2 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+B2 => inst6.IN0
+A2 => inst25.IN0
+Y3 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+B3 => inst5.IN0
+A3 => inst23.IN0
+Y4 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst4.IN0
+A4 => inst21.IN0
+Y5 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+B5 => inst3.IN0
+A5 => inst19.IN0
+Y6 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+B6 => inst2.IN0
+A6 => inst17.IN0
+Y7 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+B7 => inst1.IN0
+A7 => inst.IN0
+
+

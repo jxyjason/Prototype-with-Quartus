@@ -1,0 +1,443 @@
+Analysis & Synthesis report for model_machine
+Wed May 25 19:05:03 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst16|74161:inst2
+  9. Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst16|74161:inst3
+ 10. Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst56|74161:inst2
+ 11. Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst56|74161:inst3
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed May 25 19:05:03 2022   ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name                      ; model_machine                           ;
+; Top-level Entity Name              ; model_machine                           ;
+; Family                             ; Cyclone II                              ;
+; Total logic elements               ; 181                                     ;
+;     Total combinational functions  ; 181                                     ;
+;     Dedicated logic registers      ; 86                                      ;
+; Total registers                    ; 86                                      ;
+; Total pins                         ; 59                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                       ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP2C8Q208C8        ;                    ;
+; Top-level entity name                                          ; model_machine      ; model_machine      ;
+; Family name                                                    ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                        ; Off                ;                    ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Optimization Technique                                         ; Balanced           ; Balanced           ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Perform gate-level register retiming                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                 ; On                 ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                   ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------+
+; model_machine.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/model_machine.bdf               ;
+; counter_with_set_8_advanced.bdf  ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/counter_with_set_8_advanced.bdf ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; d:/mc_00/quartus ii/quartus/libraries/others/maxplus2/74161.tdf                                ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/mc_00/quartus ii/quartus/libraries/megafunctions/aglobal.inc                                ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; d:/mc_00/quartus ii/quartus/libraries/others/maxplus2/f74161.bdf                               ;
+; decoder2_4.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/decoder2_4.bdf                  ;
+; multiplexer2_1.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/multiplexer2_1.bdf              ;
+; register8_with_clrn.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/register8_with_clrn.bdf         ;
+; decoder3_8.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/decoder3_8.bdf                  ;
+; shifter_8.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/shifter_8.bdf                   ;
+; shifter_4.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/shifter_4.bdf                   ;
+; ALU8_with_set_model.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/ALU8_with_set_model.bdf         ;
+; 74181.bdf                        ; yes             ; Megafunction                             ; d:/mc_00/quartus ii/quartus/libraries/others/maxplus2/74181.bdf                                ;
+; 74182.bdf                        ; yes             ; Megafunction                             ; d:/mc_00/quartus ii/quartus/libraries/others/maxplus2/74182.bdf                                ;
+; register8_group4.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/register8_group4.bdf            ;
+; multiplexer4_1.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/multiplexer4_1.bdf              ;
+; register8_with_clrn_tri.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/register8_with_clrn_tri.bdf     ;
+; AND2_8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/AND2_8.bdf                      ;
+; condition_getter.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/condition_getter.bdf            ;
+; tri_state_gate_8.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/model_machine_advanced/tri_state_gate_8.bdf            ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 181   ;
+;                                             ;       ;
+; Total combinational functions               ; 181   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 129   ;
+;     -- 3 input functions                    ; 40    ;
+;     -- <=2 input functions                  ; 12    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 181   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 86    ;
+;     -- Dedicated logic registers            ; 86    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 59    ;
+; Maximum fan-out node                        ; CLRN  ;
+; Maximum fan-out                             ; 86    ;
+; Total fan-out                               ; 958   ;
+; Average fan-out                             ; 2.94  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Library Name ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
+; |model_machine                          ; 181 (11)          ; 86 (0)       ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |model_machine                                                           ; work         ;
+;    |ALU8_with_set_model:inst54|         ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst54                                ; work         ;
+;       |74181:inst1|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst54|74181:inst1                    ; work         ;
+;       |74181:inst|                      ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst54|74181:inst                     ; work         ;
+;       |74182:inst2|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst54|74182:inst2                    ; work         ;
+;    |ALU8_with_set_model:inst|           ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst                                  ; work         ;
+;       |74181:inst1|                     ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst|74181:inst1                      ; work         ;
+;       |74181:inst|                      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst|74181:inst                       ; work         ;
+;       |74182:inst2|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU8_with_set_model:inst|74182:inst2                      ; work         ;
+;    |condition_getter:inst11|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|condition_getter:inst11                                   ; work         ;
+;    |counter_with_set_8_advanced:inst16| ; 19 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst16                        ; work         ;
+;       |74161:inst2|                     ; 12 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst16|74161:inst2            ; work         ;
+;          |f74161:sub|                   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub ; work         ;
+;       |74161:inst3|                     ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst16|74161:inst3            ; work         ;
+;          |f74161:sub|                   ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub ; work         ;
+;    |counter_with_set_8_advanced:inst56| ; 18 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst56                        ; work         ;
+;       |74161:inst2|                     ; 13 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst56|74161:inst2            ; work         ;
+;          |f74161:sub|                   ; 13 (13)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub ; work         ;
+;       |74161:inst3|                     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst56|74161:inst3            ; work         ;
+;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|counter_with_set_8_advanced:inst56|74161:inst3|f74161:sub ; work         ;
+;    |decoder2_4:inst55|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|decoder2_4:inst55                                         ; work         ;
+;    |multiplexer2_1:inst1|               ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|multiplexer2_1:inst1                                      ; work         ;
+;    |multiplexer2_1:inst2|               ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|multiplexer2_1:inst2                                      ; work         ;
+;    |multiplexer2_1:inst52|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|multiplexer2_1:inst52                                     ; work         ;
+;    |register8_group4:inst5|             ; 6 (4)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5                                    ; work         ;
+;       |multiplexer4_1:inst1|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5|multiplexer4_1:inst1               ; work         ;
+;       |register8_with_clrn_tri:inst29|  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5|register8_with_clrn_tri:inst29     ; work         ;
+;       |register8_with_clrn_tri:inst30|  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5|register8_with_clrn_tri:inst30     ; work         ;
+;       |register8_with_clrn_tri:inst31|  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5|register8_with_clrn_tri:inst31     ; work         ;
+;       |register8_with_clrn_tri:inst32|  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_group4:inst5|register8_with_clrn_tri:inst32     ; work         ;
+;    |register8_with_clrn:inst10|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_with_clrn:inst10                                ; work         ;
+;    |register8_with_clrn:inst15|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_with_clrn:inst15                                ; work         ;
+;    |register8_with_clrn:inst29|         ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_with_clrn:inst29                                ; work         ;
+;    |register8_with_clrn:inst38|         ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_with_clrn:inst38                                ; work         ;
+;    |register8_with_clrn:inst7|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|register8_with_clrn:inst7                                 ; work         ;
+;    |shifter_8:inst60|                   ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|shifter_8:inst60                                          ; work         ;
+;       |shifter_4:inst1|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|shifter_8:inst60|shifter_4:inst1                          ; work         ;
+;       |shifter_4:inst|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|shifter_8:inst60|shifter_4:inst                           ; work         ;
+;    |tri_state_gate_8:inst13|            ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|tri_state_gate_8:inst13                                   ; work         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 86    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 86    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst16|74161:inst2 ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst16|74161:inst3 ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst56|74161:inst2 ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter_with_set_8_advanced:inst56|74161:inst3 ;
++------------------------+------------+-------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                  ;
++------------------------+------------+-------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
++------------------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed May 25 19:04:59 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off model_machine -c model_machine
+Info: Found 1 design units, including 1 entities, in source file model_machine.bdf
+    Info: Found entity 1: model_machine
+Info: Elaborating entity "model_machine" for the top level hierarchy
+Warning: Pin "uIR8" not connected
+Warning: Pin "continue_cp" not connected
+Warning: Using design file counter_with_set_8_advanced.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: counter_with_set_8_advanced
+Info: Elaborating entity "counter_with_set_8_advanced" for hierarchy "counter_with_set_8_advanced:inst16"
+Info: Elaborating entity "74161" for hierarchy "counter_with_set_8_advanced:inst16|74161:inst2"
+Info: Elaborated megafunction instantiation "counter_with_set_8_advanced:inst16|74161:inst2"
+Info: Elaborating entity "f74161" for hierarchy "counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub"
+Info: Elaborated megafunction instantiation "counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub", which is child of megafunction instantiation "counter_with_set_8_advanced:inst16|74161:inst2"
+Info: Elaborating entity "74161" for hierarchy "counter_with_set_8_advanced:inst16|74161:inst3"
+Info: Elaborated megafunction instantiation "counter_with_set_8_advanced:inst16|74161:inst3"
+Warning: Using design file decoder2_4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: decoder2_4
+Info: Elaborating entity "decoder2_4" for hierarchy "decoder2_4:inst23"
+Warning: Using design file multiplexer2_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: multiplexer2_1
+Info: Elaborating entity "multiplexer2_1" for hierarchy "multiplexer2_1:inst8"
+Warning: Using design file register8_with_clrn.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: register8_with_clrn
+Info: Elaborating entity "register8_with_clrn" for hierarchy "register8_with_clrn:inst7"
+Warning: Using design file decoder3_8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: decoder3_8
+Info: Elaborating entity "decoder3_8" for hierarchy "decoder3_8:inst32"
+Warning: Using design file shifter_8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: shifter_8
+Info: Elaborating entity "shifter_8" for hierarchy "shifter_8:inst60"
+Warning: Using design file shifter_4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: shifter_4
+Info: Elaborating entity "shifter_4" for hierarchy "shifter_8:inst60|shifter_4:inst"
+Warning: Using design file ALU8_with_set_model.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: ALU8_with_set_model
+Info: Elaborating entity "ALU8_with_set_model" for hierarchy "ALU8_with_set_model:inst"
+Info: Elaborating entity "74181" for hierarchy "ALU8_with_set_model:inst|74181:inst"
+Info: Elaborated megafunction instantiation "ALU8_with_set_model:inst|74181:inst"
+Info: Elaborating entity "74182" for hierarchy "ALU8_with_set_model:inst|74182:inst2"
+Info: Elaborated megafunction instantiation "ALU8_with_set_model:inst|74182:inst2"
+Warning: Using design file register8_group4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: register8_group4
+Info: Elaborating entity "register8_group4" for hierarchy "register8_group4:inst5"
+Warning: Using design file multiplexer4_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: multiplexer4_1
+Info: Elaborating entity "multiplexer4_1" for hierarchy "register8_group4:inst5|multiplexer4_1:inst1"
+Warning: Using design file register8_with_clrn_tri.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: register8_with_clrn_tri
+Info: Elaborating entity "register8_with_clrn_tri" for hierarchy "register8_group4:inst5|register8_with_clrn_tri:inst29"
+Warning: Using design file AND2_8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: AND2_8
+Info: Elaborating entity "AND2_8" for hierarchy "AND2_8:inst62"
+Warning: Using design file condition_getter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: condition_getter
+Info: Elaborating entity "condition_getter" for hierarchy "condition_getter:inst11"
+Warning: Using design file tri_state_gate_8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: tri_state_gate_8
+Info: Elaborating entity "tri_state_gate_8" for hierarchy "tri_state_gate_8:inst12"
+Info: Ignored 76 buffer(s)
+    Info: Ignored 16 CARRY buffer(s)
+    Info: Ignored 60 SOFT buffer(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted tri-state buffer "condition_getter:inst11|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "condition_getter:inst11|inst1" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "condition_getter:inst11|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "condition_getter:inst11|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst1" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst5" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst6" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst8" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst32|inst10" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst1" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst5" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst6" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst8" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst31|inst10" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst1" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst5" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst6" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst8" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst30|inst10" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst1" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst5" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst6" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst8" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "register8_group4:inst5|register8_with_clrn_tri:inst29|inst10" feeding internal logic into a wire
+Warning: Always-enabled tri-state buffer(s) removed
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst" to the node "register8_with_clrn:inst15|inst" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst6" to the node "register8_with_clrn:inst15|inst7" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst8" to the node "register8_with_clrn:inst15|inst9" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst7" to the node "register8_with_clrn:inst15|inst11" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst10" to the node "register8_with_clrn:inst15|inst13" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst9" to the node "register8_with_clrn:inst15|inst15" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst11" to the node "register8_with_clrn:inst15|inst14" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "tri_state_gate_8:inst13|inst12" to the node "register8_with_clrn:inst15|inst16" into a wire
+Warning: Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "uIR8"
+    Warning (15610): No output dependent on input pin "continue_cp"
+Info: Implemented 297 device resources after synthesis - the final resource count might be different
+    Info: Implemented 27 input pins
+    Info: Implemented 24 output pins
+    Info: Implemented 8 bidirectional pins
+    Info: Implemented 238 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 232 megabytes
+    Info: Processing ended: Wed May 25 19:05:03 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

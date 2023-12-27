@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.743 ns
+From           : CLRN
+To             : inst3~_emulated
+From Clock     : --
+To Clock       : PRN
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.048 ns
+From           : inst3~_emulated
+To             : Q3
+From Clock     : CP
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.815 ns
+From           : CLRN
+To             : Q3
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.501 ns
+From           : PRN
+To             : inst2~_emulated
+From Clock     : --
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'PRN'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 141.90 MHz ( period = 7.047 ns )
+From           : inst3~_emulated
+To             : inst3~_emulated
+From Clock     : PRN
+To Clock       : PRN
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLRN'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 142.01 MHz ( period = 7.042 ns )
+From           : inst3~_emulated
+To             : inst3~_emulated
+From Clock     : CLRN
+To Clock       : CLRN
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 324.04 MHz ( period = 3.086 ns )
+From           : inst~_emulated
+To             : inst~_emulated
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Hold: 'PRN'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst3~_emulated
+To             : inst3~_emulated
+From Clock     : PRN
+To Clock       : PRN
+Failed Paths   : 2
+
+Type           : Clock Hold: 'CLRN'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : inst3~_emulated
+To             : inst3~_emulated
+From Clock     : CLRN
+To Clock       : CLRN
+Failed Paths   : 2
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 4
+
+--------------------------------------------------------------------------------------
+

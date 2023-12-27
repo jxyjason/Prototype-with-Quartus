@@ -1,0 +1,15 @@
+Info: Start Nativelink Simulation process
+Error: NativeLink did not detect any HDL files in the project
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  NONE
+Nativelink TCL script failed with errorInfo:  NativeLink did not detect any HDL files in the project
+    invoked from within
+"if ![qmap_successfully_completed] {
+	    nl_postmsg error "Error: Run Analysis and Elaboration successfully before starting RTL NativeLink Simulation"..."
+    (procedure "run_eda_simulation_tool" line 132)
+    invoked from within
+"run_eda_simulation_tool $optshash(-rtl_sim) $optshash(-no_gui) $optshash(-gen_script) $optshash(-block_on_gui) $netlist_file $timing_file"

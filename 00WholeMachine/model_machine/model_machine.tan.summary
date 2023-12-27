@@ -1,0 +1,196 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.916 ns
+From           : uIR12
+To             : register8_with_clrn:inst29|inst14
+From Clock     : --
+To Clock       : uIR11
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 26.263 ns
+From           : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|99
+To             : ROMADDRESS6
+From Clock     : START_CP
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.233 ns
+From           : uIR3
+To             : WR
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.139 ns
+From           : uIR16
+To             : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|9
+From Clock     : --
+To Clock       : START_CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 40.76 MHz ( period = 24.532 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR9'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 43.50 MHz ( period = 22.986 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'continue_cp'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.90 MHz ( period = 22.274 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : continue_cp
+To Clock       : continue_cp
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR8'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.90 MHz ( period = 22.274 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : uIR8
+To Clock       : uIR8
+Failed Paths   : 0
+
+Type           : Clock Setup: 'START_CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.90 MHz ( period = 22.274 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : START_CP
+To Clock       : START_CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR10'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 44.98 MHz ( period = 22.230 ns )
+From           : counter_with_set_256:inst6|counter_with_set_16:inst|inst6
+To             : register8_with_clrn:inst38|inst
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|110
+To             : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|99
+From Clock     : uIR1
+To Clock       : uIR1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|110
+To             : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|99
+From Clock     : uIR0
+To Clock       : uIR0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'START_CP'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst7|inst
+To             : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|110
+From Clock     : START_CP
+To Clock       : START_CP
+Failed Paths   : 183
+
+Type           : Clock Hold: 'uIR8'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst7|inst
+To             : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|110
+From Clock     : uIR8
+To Clock       : uIR8
+Failed Paths   : 183
+
+Type           : Clock Hold: 'continue_cp'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst7|inst
+To             : counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub|110
+From Clock     : continue_cp
+To Clock       : continue_cp
+Failed Paths   : 183
+
+Type           : Clock Hold: 'uIR10'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst7|inst13
+To             : register8_with_clrn:inst29|inst16
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 179
+
+Type           : Clock Hold: 'uIR9'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst7|inst13
+To             : register8_with_clrn:inst29|inst16
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 162
+
+Type           : Clock Hold: 'uIR11'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register8_with_clrn:inst38|inst15
+To             : register8_with_clrn:inst10|inst15
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 2
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 892
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,336 @@
+Simulator report for register8_group4
+Sat Apr 16 22:49:15 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 105 nodes    ;
+; Simulation Coverage         ;      12.38 % ;
+; Total Number of Transitions ; 50           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C8Q208C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      12.38 % ;
+; Total nodes checked                                 ; 105          ;
+; Total output ports checked                          ; 105          ;
+; Total output ports with complete 1/0-value coverage ; 13           ;
+; Total output ports with no 1/0-value coverage       ; 70           ;
+; Total output ports with no 1-value coverage         ; 70           ;
+; Total output ports with no 0-value coverage         ; 92           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                              ;
++----------------------------------+------------------------------------+------------------+
+; Node Name                        ; Output Port Name                   ; Output Port Type ;
++----------------------------------+------------------------------------+------------------+
+; |register8_group4|inst22         ; |register8_group4|inst22           ; combout          ;
+; |register8_group4|inst23         ; |register8_group4|inst23           ; combout          ;
+; |register8_group4|I6             ; |register8_group4|I6~corein        ; combout          ;
+; |register8_group4|I5             ; |register8_group4|I5~corein        ; combout          ;
+; |register8_group4|I2             ; |register8_group4|I2~corein        ; combout          ;
+; |register8_group4|I0             ; |register8_group4|I0~corein        ; combout          ;
+; |register8_group4|I7             ; |register8_group4|I7~corein        ; combout          ;
+; |register8_group4|I1             ; |register8_group4|I1~corein        ; combout          ;
+; |register8_group4|CHOOSEIN1      ; |register8_group4|CHOOSEIN1~corein ; combout          ;
+; |register8_group4|CP             ; |register8_group4|CP~corein        ; combout          ;
+; |register8_group4|CHOOSEIN0      ; |register8_group4|CHOOSEIN0~corein ; combout          ;
+; |register8_group4|inst22~clkctrl ; |register8_group4|inst22~clkctrl   ; outclk           ;
+; |register8_group4|inst23~clkctrl ; |register8_group4|inst23~clkctrl   ; outclk           ;
++----------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; |register8_group4|register8_with_clrn_tri:inst30|inst7  ; |register8_group4|register8_with_clrn_tri:inst30|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst7  ; |register8_group4|register8_with_clrn_tri:inst29|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst7  ; |register8_group4|register8_with_clrn_tri:inst32|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst9  ; |register8_group4|register8_with_clrn_tri:inst30|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst9  ; |register8_group4|register8_with_clrn_tri:inst29|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst9  ; |register8_group4|register8_with_clrn_tri:inst32|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst11 ; |register8_group4|register8_with_clrn_tri:inst30|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst11 ; |register8_group4|register8_with_clrn_tri:inst29|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst11 ; |register8_group4|register8_with_clrn_tri:inst31|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst11 ; |register8_group4|register8_with_clrn_tri:inst32|inst11 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst27~36        ; |register8_group4|multiplexer4_1:inst1|inst27~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst27           ; |register8_group4|multiplexer4_1:inst1|inst27           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst13 ; |register8_group4|register8_with_clrn_tri:inst30|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst13 ; |register8_group4|register8_with_clrn_tri:inst29|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst13 ; |register8_group4|register8_with_clrn_tri:inst31|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst13 ; |register8_group4|register8_with_clrn_tri:inst32|inst13 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst23~36        ; |register8_group4|multiplexer4_1:inst1|inst23~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst23           ; |register8_group4|multiplexer4_1:inst1|inst23           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst15 ; |register8_group4|register8_with_clrn_tri:inst29|inst15 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst15 ; |register8_group4|register8_with_clrn_tri:inst31|inst15 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst15 ; |register8_group4|register8_with_clrn_tri:inst32|inst15 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst18~36        ; |register8_group4|multiplexer4_1:inst1|inst18~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst18           ; |register8_group4|multiplexer4_1:inst1|inst18           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst16 ; |register8_group4|register8_with_clrn_tri:inst32|inst16 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst16 ; |register8_group4|register8_with_clrn_tri:inst31|inst16 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst16 ; |register8_group4|register8_with_clrn_tri:inst29|inst16 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst8~42         ; |register8_group4|multiplexer4_1:inst1|inst8~42         ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst8~43         ; |register8_group4|multiplexer4_1:inst1|inst8~43         ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst   ; |register8_group4|register8_with_clrn_tri:inst30|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst   ; |register8_group4|register8_with_clrn_tri:inst32|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst   ; |register8_group4|register8_with_clrn_tri:inst29|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst14 ; |register8_group4|register8_with_clrn_tri:inst32|inst14 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst14 ; |register8_group4|register8_with_clrn_tri:inst31|inst14 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst14 ; |register8_group4|register8_with_clrn_tri:inst29|inst14 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst13~37        ; |register8_group4|multiplexer4_1:inst1|inst13~37        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst13~38        ; |register8_group4|multiplexer4_1:inst1|inst13~38        ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst42~37         ; |register8_group4|multiplexer4_1:inst|inst42~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst42~38         ; |register8_group4|multiplexer4_1:inst|inst42~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst37~37         ; |register8_group4|multiplexer4_1:inst|inst37~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst37~38         ; |register8_group4|multiplexer4_1:inst|inst37~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst32~37         ; |register8_group4|multiplexer4_1:inst|inst32~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst32~38         ; |register8_group4|multiplexer4_1:inst|inst32~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst27~37         ; |register8_group4|multiplexer4_1:inst|inst27~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst27~38         ; |register8_group4|multiplexer4_1:inst|inst27~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst23~37         ; |register8_group4|multiplexer4_1:inst|inst23~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst23~38         ; |register8_group4|multiplexer4_1:inst|inst23~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst18~37         ; |register8_group4|multiplexer4_1:inst|inst18~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst13~37         ; |register8_group4|multiplexer4_1:inst|inst13~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst8~37          ; |register8_group4|multiplexer4_1:inst|inst8~37          ; combout          ;
+; |register8_group4|inst21                                ; |register8_group4|inst21                                ; combout          ;
+; |register8_group4|inst24                                ; |register8_group4|inst24                                ; combout          ;
+; |register8_group4|OB4                                   ; |register8_group4|OB4                                   ; padio            ;
+; |register8_group4|OB3                                   ; |register8_group4|OB3                                   ; padio            ;
+; |register8_group4|OB2                                   ; |register8_group4|OB2                                   ; padio            ;
+; |register8_group4|OB0                                   ; |register8_group4|OB0                                   ; padio            ;
+; |register8_group4|OB1                                   ; |register8_group4|OB1                                   ; padio            ;
+; |register8_group4|OA7                                   ; |register8_group4|OA7                                   ; padio            ;
+; |register8_group4|OA6                                   ; |register8_group4|OA6                                   ; padio            ;
+; |register8_group4|OA5                                   ; |register8_group4|OA5                                   ; padio            ;
+; |register8_group4|OA4                                   ; |register8_group4|OA4                                   ; padio            ;
+; |register8_group4|OA3                                   ; |register8_group4|OA3                                   ; padio            ;
+; |register8_group4|OUT2CHOOSE1                           ; |register8_group4|OUT2CHOOSE1~corein                    ; combout          ;
+; |register8_group4|OUT2CHOOSE0                           ; |register8_group4|OUT2CHOOSE0~corein                    ; combout          ;
+; |register8_group4|OUT1CHOOSE0                           ; |register8_group4|OUT1CHOOSE0~corein                    ; combout          ;
+; |register8_group4|OUT1CHOOSE1                           ; |register8_group4|OUT1CHOOSE1~corein                    ; combout          ;
+; |register8_group4|I4                                    ; |register8_group4|I4~corein                             ; combout          ;
+; |register8_group4|I3                                    ; |register8_group4|I3~corein                             ; combout          ;
+; |register8_group4|CPR                                   ; |register8_group4|CPR~corein                            ; combout          ;
+; |register8_group4|inst24~clkctrl                        ; |register8_group4|inst24~clkctrl                        ; outclk           ;
+; |register8_group4|inst21~clkctrl                        ; |register8_group4|inst21~clkctrl                        ; outclk           ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                             ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; Node Name                                               ; Output Port Name                                        ; Output Port Type ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+; |register8_group4|register8_with_clrn_tri:inst30|inst7  ; |register8_group4|register8_with_clrn_tri:inst30|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst7  ; |register8_group4|register8_with_clrn_tri:inst29|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst7  ; |register8_group4|register8_with_clrn_tri:inst31|inst7  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst7  ; |register8_group4|register8_with_clrn_tri:inst32|inst7  ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst37~36        ; |register8_group4|multiplexer4_1:inst1|inst37~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst37           ; |register8_group4|multiplexer4_1:inst1|inst37           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst9  ; |register8_group4|register8_with_clrn_tri:inst30|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst9  ; |register8_group4|register8_with_clrn_tri:inst29|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst9  ; |register8_group4|register8_with_clrn_tri:inst31|inst9  ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst9  ; |register8_group4|register8_with_clrn_tri:inst32|inst9  ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst32~36        ; |register8_group4|multiplexer4_1:inst1|inst32~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst32           ; |register8_group4|multiplexer4_1:inst1|inst32           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst11 ; |register8_group4|register8_with_clrn_tri:inst30|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst11 ; |register8_group4|register8_with_clrn_tri:inst29|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst11 ; |register8_group4|register8_with_clrn_tri:inst31|inst11 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst11 ; |register8_group4|register8_with_clrn_tri:inst32|inst11 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst27~36        ; |register8_group4|multiplexer4_1:inst1|inst27~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst27           ; |register8_group4|multiplexer4_1:inst1|inst27           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst13 ; |register8_group4|register8_with_clrn_tri:inst30|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst13 ; |register8_group4|register8_with_clrn_tri:inst29|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst13 ; |register8_group4|register8_with_clrn_tri:inst31|inst13 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst13 ; |register8_group4|register8_with_clrn_tri:inst32|inst13 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst23~36        ; |register8_group4|multiplexer4_1:inst1|inst23~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst23           ; |register8_group4|multiplexer4_1:inst1|inst23           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst15 ; |register8_group4|register8_with_clrn_tri:inst30|inst15 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst15 ; |register8_group4|register8_with_clrn_tri:inst29|inst15 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst15 ; |register8_group4|register8_with_clrn_tri:inst31|inst15 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst15 ; |register8_group4|register8_with_clrn_tri:inst32|inst15 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst18~36        ; |register8_group4|multiplexer4_1:inst1|inst18~36        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst18           ; |register8_group4|multiplexer4_1:inst1|inst18           ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst16 ; |register8_group4|register8_with_clrn_tri:inst30|inst16 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst16 ; |register8_group4|register8_with_clrn_tri:inst32|inst16 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst16 ; |register8_group4|register8_with_clrn_tri:inst31|inst16 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst16 ; |register8_group4|register8_with_clrn_tri:inst29|inst16 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst8~42         ; |register8_group4|multiplexer4_1:inst1|inst8~42         ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst8~43         ; |register8_group4|multiplexer4_1:inst1|inst8~43         ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst   ; |register8_group4|register8_with_clrn_tri:inst30|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst   ; |register8_group4|register8_with_clrn_tri:inst32|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst   ; |register8_group4|register8_with_clrn_tri:inst31|inst   ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst   ; |register8_group4|register8_with_clrn_tri:inst29|inst   ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst42~37        ; |register8_group4|multiplexer4_1:inst1|inst42~37        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst42~38        ; |register8_group4|multiplexer4_1:inst1|inst42~38        ; combout          ;
+; |register8_group4|register8_with_clrn_tri:inst30|inst14 ; |register8_group4|register8_with_clrn_tri:inst30|inst14 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst32|inst14 ; |register8_group4|register8_with_clrn_tri:inst32|inst14 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst31|inst14 ; |register8_group4|register8_with_clrn_tri:inst31|inst14 ; regout           ;
+; |register8_group4|register8_with_clrn_tri:inst29|inst14 ; |register8_group4|register8_with_clrn_tri:inst29|inst14 ; regout           ;
+; |register8_group4|multiplexer4_1:inst1|inst13~37        ; |register8_group4|multiplexer4_1:inst1|inst13~37        ; combout          ;
+; |register8_group4|multiplexer4_1:inst1|inst13~38        ; |register8_group4|multiplexer4_1:inst1|inst13~38        ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst42~37         ; |register8_group4|multiplexer4_1:inst|inst42~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst42~38         ; |register8_group4|multiplexer4_1:inst|inst42~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst37~37         ; |register8_group4|multiplexer4_1:inst|inst37~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst37~38         ; |register8_group4|multiplexer4_1:inst|inst37~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst32~37         ; |register8_group4|multiplexer4_1:inst|inst32~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst32~38         ; |register8_group4|multiplexer4_1:inst|inst32~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst27~37         ; |register8_group4|multiplexer4_1:inst|inst27~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst27~38         ; |register8_group4|multiplexer4_1:inst|inst27~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst23~37         ; |register8_group4|multiplexer4_1:inst|inst23~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst23~38         ; |register8_group4|multiplexer4_1:inst|inst23~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst18~37         ; |register8_group4|multiplexer4_1:inst|inst18~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst18~38         ; |register8_group4|multiplexer4_1:inst|inst18~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst13~37         ; |register8_group4|multiplexer4_1:inst|inst13~37         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst13~38         ; |register8_group4|multiplexer4_1:inst|inst13~38         ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst8~37          ; |register8_group4|multiplexer4_1:inst|inst8~37          ; combout          ;
+; |register8_group4|multiplexer4_1:inst|inst8~38          ; |register8_group4|multiplexer4_1:inst|inst8~38          ; combout          ;
+; |register8_group4|inst21                                ; |register8_group4|inst21                                ; combout          ;
+; |register8_group4|inst24                                ; |register8_group4|inst24                                ; combout          ;
+; |register8_group4|OB6                                   ; |register8_group4|OB6                                   ; padio            ;
+; |register8_group4|OB5                                   ; |register8_group4|OB5                                   ; padio            ;
+; |register8_group4|OB4                                   ; |register8_group4|OB4                                   ; padio            ;
+; |register8_group4|OB3                                   ; |register8_group4|OB3                                   ; padio            ;
+; |register8_group4|OB2                                   ; |register8_group4|OB2                                   ; padio            ;
+; |register8_group4|OB0                                   ; |register8_group4|OB0                                   ; padio            ;
+; |register8_group4|OB7                                   ; |register8_group4|OB7                                   ; padio            ;
+; |register8_group4|OB1                                   ; |register8_group4|OB1                                   ; padio            ;
+; |register8_group4|OA7                                   ; |register8_group4|OA7                                   ; padio            ;
+; |register8_group4|OA6                                   ; |register8_group4|OA6                                   ; padio            ;
+; |register8_group4|OA5                                   ; |register8_group4|OA5                                   ; padio            ;
+; |register8_group4|OA4                                   ; |register8_group4|OA4                                   ; padio            ;
+; |register8_group4|OA3                                   ; |register8_group4|OA3                                   ; padio            ;
+; |register8_group4|OA2                                   ; |register8_group4|OA2                                   ; padio            ;
+; |register8_group4|OA1                                   ; |register8_group4|OA1                                   ; padio            ;
+; |register8_group4|OA0                                   ; |register8_group4|OA0                                   ; padio            ;
+; |register8_group4|OUT2CHOOSE1                           ; |register8_group4|OUT2CHOOSE1~corein                    ; combout          ;
+; |register8_group4|OUT2CHOOSE0                           ; |register8_group4|OUT2CHOOSE0~corein                    ; combout          ;
+; |register8_group4|OUT1CHOOSE0                           ; |register8_group4|OUT1CHOOSE0~corein                    ; combout          ;
+; |register8_group4|OUT1CHOOSE1                           ; |register8_group4|OUT1CHOOSE1~corein                    ; combout          ;
+; |register8_group4|CLRN                                  ; |register8_group4|CLRN~corein                           ; combout          ;
+; |register8_group4|I4                                    ; |register8_group4|I4~corein                             ; combout          ;
+; |register8_group4|I3                                    ; |register8_group4|I3~corein                             ; combout          ;
+; |register8_group4|CPR                                   ; |register8_group4|CPR~corein                            ; combout          ;
+; |register8_group4|inst24~clkctrl                        ; |register8_group4|inst24~clkctrl                        ; outclk           ;
+; |register8_group4|inst21~clkctrl                        ; |register8_group4|inst21~clkctrl                        ; outclk           ;
++---------------------------------------------------------+---------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Sat Apr 16 22:49:15 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off register8_group4 -c register8_group4
+Info: Using vector source file "D:/JiSuanJiZuZhiYuJieGou/00WholeMachine/register8_group4/register8_group4.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      12.38 %
+Info: Number of transitions in simulation is 50
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 185 megabytes
+    Info: Processing ended: Sat Apr 16 22:49:15 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

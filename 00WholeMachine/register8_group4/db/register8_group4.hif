@@ -1,0 +1,111 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+register8_with_clrn_tri
+# storage
+db|register8_group4.(1).cnf
+db|register8_group4.(1).cnf
+# case_insensitive
+# source_file
+register8_with_clrn_tri.bdf
+8febe12b86c28e1a55e4694b939d9b51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_with_clrn_tri:inst29
+register8_with_clrn_tri:inst30
+register8_with_clrn_tri:inst31
+register8_with_clrn_tri:inst32
+}
+# macro_sequence
+
+# end
+# entity
+decoder2_4
+# storage
+db|register8_group4.(3).cnf
+db|register8_group4.(3).cnf
+# case_insensitive
+# source_file
+decoder2_4.bdf
+35c756a43c1cb57c254bf97621f9992
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decoder2_4:inst15
+decoder2_4:inst3
+decoder2_4:inst4
+}
+# macro_sequence
+
+# end
+# entity
+multiplexer4_1
+# storage
+db|register8_group4.(2).cnf
+db|register8_group4.(2).cnf
+# case_insensitive
+# source_file
+multiplexer4_1.bdf
+55da62fab4d74c443895c6b32189833
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+multiplexer4_1:inst1
+multiplexer4_1:inst
+}
+# macro_sequence
+
+# end
+# entity
+register8_group4
+# storage
+db|register8_group4.(0).cnf
+db|register8_group4.(0).cnf
+# case_insensitive
+# source_file
+register8_group4.bdf
+de1eb1799be1141f2a8cd31e96c5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

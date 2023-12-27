@@ -1,0 +1,21 @@
+|counter_with_set_16
+O3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I3 => inst11.IN0
+I3 => inst16.IN0
+DFF => inst17.IN0
+CLRN => inst33.IN1
+CLRN => inst32.IN1
+CLRN => inst31.IN1
+CLRN => inst30.IN1
+I2 => inst10.IN0
+I2 => inst19.IN0
+I1 => inst9.IN0
+I1 => inst20.IN0
+I0 => inst8.IN0
+I0 => inst18.IN0
+CP => inst.CLK
+O2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+O0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+O1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,27 @@
+|condition_getter
+CF <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I8 => inst4.DATAIN
+EN => inst4.OE
+EN => inst1.OE
+EN => inst2.OE
+EN => inst3.OE
+ZF <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst.IN0
+I2 => inst.IN1
+I1 => inst.IN2
+I3 => inst.IN3
+I5 => inst.IN4
+I4 => inst.IN5
+I6 => inst.IN6
+I7 => inst.IN7
+I7 => inst2.DATAIN
+I7 => inst11.IN2
+I7 => inst12.IN0
+SF <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OF <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A7 => inst13.IN0
+A7 => inst10.IN1
+B7 => inst14.IN0
+B7 => inst10.IN0
+
+

@@ -1,0 +1,64 @@
+|counter_with_set_256
+O7 <= counter_with_set_16:inst.O3
+I7 => counter_with_set_16:inst.I3
+I6 => counter_with_set_16:inst.I2
+I5 => counter_with_set_16:inst.I1
+I4 => counter_with_set_16:inst.I0
+DFF => counter_with_set_16:inst.DFF
+DFF => counter_with_set_16:inst1.DFF
+I3 => counter_with_set_16:inst1.I3
+I2 => counter_with_set_16:inst1.I2
+I1 => counter_with_set_16:inst1.I1
+I0 => counter_with_set_16:inst1.I0
+CP => counter_with_set_16:inst1.CP
+CLRN => counter_with_set_16:inst1.CLRN
+CLRN => counter_with_set_16:inst.CLRN
+O6 <= counter_with_set_16:inst.O2
+O5 <= counter_with_set_16:inst.O1
+O4 <= counter_with_set_16:inst.O0
+O3 <= counter_with_set_16:inst1.O3
+O2 <= counter_with_set_16:inst1.O2
+O1 <= counter_with_set_16:inst1.O1
+O0 <= counter_with_set_16:inst1.O0
+
+
+|counter_with_set_256|counter_with_set_16:inst
+O3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst6.ACLR
+CLRN => inst4.ACLR
+CLRN => inst2.ACLR
+CLRN => inst.ACLR
+CP => inst.CLK
+I0 => inst9.IN0
+DFF => inst8.IN1
+DFF => inst13.IN1
+DFF => inst14.IN1
+DFF => inst15.IN1
+I1 => inst10.IN0
+I2 => inst11.IN0
+I3 => inst12.IN0
+O2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+O0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+O1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_with_set_256|counter_with_set_16:inst1
+O3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst6.ACLR
+CLRN => inst4.ACLR
+CLRN => inst2.ACLR
+CLRN => inst.ACLR
+CP => inst.CLK
+I0 => inst9.IN0
+DFF => inst8.IN1
+DFF => inst13.IN1
+DFF => inst14.IN1
+DFF => inst15.IN1
+I1 => inst10.IN0
+I2 => inst11.IN0
+I3 => inst12.IN0
+O2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+O0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+O1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

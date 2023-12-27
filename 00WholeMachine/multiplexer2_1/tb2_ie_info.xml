@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2022/03/28 18:54:23</DateInvoked>
+	<ElapsedTime>891</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<License>
+		<Edition>Web Edition</Edition>
+		<LicenseHostID/>
+	</License>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>57715610693122.164605266410056</UserID>
+		<UserName>Jason</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<SchemaVersion>schema_2008-09-10</SchemaVersion>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<ApplicationError>
+		<ErrorMessage>Current editor: GED</ErrorMessage>
+		<Line>0</Line>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x4c12cb26: AOT803AS + 0x12cb26 (??_7?$CMap@IIPAVSECControlBar@@PAV1@@@6B@ + 0x2)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Machine>
+		<CPUCountLogical>8</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>2112</CPUSpeed>
+		<Hostname>LAPTOP-2L510BBE</Hostname>
+		<OS>Windows Vista</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>6.2</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+		<TotalVirtualRAM>0</TotalVirtualRAM>
+		<NIC>
+			<Address>347df6792e02</Address>
+		</NIC>
+		<NIC>
+			<Address>00ff574c00d2</Address>
+		</NIC>
+		<NIC>
+			<Address>005056c00001</Address>
+		</NIC>
+		<NIC>
+			<Address>005056c00008</Address>
+		</NIC>
+		<NIC>
+			<Address>347df6792dfe</Address>
+		</NIC>
+		<NIC>
+			<Address>347df6792dff</Address>
+		</NIC>
+		<NIC>
+			<Address>367df6792dfe</Address>
+		</NIC>
+	</Machine>
+	<QuartusInstallation>
+		<InstallationID>57715610693122.164605226926344</InstallationID>
+		<Version>
+			<Build>163</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Web Edition</Edition>
+			<ServicePack>0</ServicePack>
+			<VersionNumber>8.1</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+</ProgramExecution>
+

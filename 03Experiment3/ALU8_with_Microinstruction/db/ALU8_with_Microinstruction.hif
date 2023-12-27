@@ -1,0 +1,255 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ALU8_with_register
+# storage
+db|ALU8_with_Microinstruction.(1).cnf
+db|ALU8_with_Microinstruction.(1).cnf
+# case_insensitive
+# source_file
+ALU8_with_register.bdf
+7183508078ba438d9244f4c6531567e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst
+}
+# macro_sequence
+
+# end
+# entity
+register-8
+# storage
+db|ALU8_with_Microinstruction.(2).cnf
+db|ALU8_with_Microinstruction.(2).cnf
+# case_insensitive
+# source_file
+register-8.bdf
+f32a9134d6efa85b54b49ffc67483b88
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst|register-8:inst3
+ALU8_with_register:inst|register-8:inst2
+ALU8_with_register:inst|register-8:inst1
+}
+# macro_sequence
+
+# end
+# entity
+register-4
+# storage
+db|ALU8_with_Microinstruction.(3).cnf
+db|ALU8_with_Microinstruction.(3).cnf
+# case_insensitive
+# source_file
+register-4.bdf
+1f2c66ddfc56102a7971237c347a5839
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst|register-8:inst3|register-4:inst
+ALU8_with_register:inst|register-8:inst3|register-4:inst1
+ALU8_with_register:inst|register-8:inst2|register-4:inst
+ALU8_with_register:inst|register-8:inst2|register-4:inst1
+ALU8_with_register:inst|register-8:inst1|register-4:inst
+ALU8_with_register:inst|register-8:inst1|register-4:inst1
+}
+# macro_sequence
+
+# end
+# entity
+ALU8_with_set_model
+# storage
+db|ALU8_with_Microinstruction.(4).cnf
+db|ALU8_with_Microinstruction.(4).cnf
+# case_insensitive
+# source_file
+ALU8_with_set_model.bdf
+a53ecf863fd98094c1a0c21aa6c922d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst|ALU8_with_set_model:inst
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|ALU8_with_Microinstruction.(5).cnf
+db|ALU8_with_Microinstruction.(5).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst|ALU8_with_set_model:inst|74181:inst
+ALU8_with_register:inst|ALU8_with_set_model:inst|74181:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74182
+# storage
+db|ALU8_with_Microinstruction.(6).cnf
+db|ALU8_with_Microinstruction.(6).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74182.bdf
+7e848f93ad7899d68043667228e561f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_register:inst|ALU8_with_set_model:inst|74182:inst2
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_256
+# storage
+db|ALU8_with_Microinstruction.(7).cnf
+db|ALU8_with_Microinstruction.(7).cnf
+# case_insensitive
+# source_file
+counter_with_set_256.bdf
+a533ef96440faa7af27dfdb1757362
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_256:inst18
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_16
+# storage
+db|ALU8_with_Microinstruction.(8).cnf
+db|ALU8_with_Microinstruction.(8).cnf
+# case_insensitive
+# source_file
+counter_with_set_16.bdf
+f5b8337a924846d176b51bf38834b4ba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_256:inst18|counter_with_set_16:inst
+counter_with_set_256:inst18|counter_with_set_16:inst1
+}
+# macro_sequence
+
+# end
+# entity
+ALU8_with_Microinstruction
+# storage
+db|ALU8_with_Microinstruction.(0).cnf
+db|ALU8_with_Microinstruction.(0).cnf
+# case_insensitive
+# source_file
+ALU8_with_Microinstruction.bdf
+406cbf4967594a7dbb8397a792790ab
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+shifter_8
+# storage
+db|ALU8_with_Microinstruction.(9).cnf
+db|ALU8_with_Microinstruction.(9).cnf
+# case_insensitive
+# source_file
+shifter_8.bdf
+cb37aff5ffbec73e4bb8e4bab31bb26f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter_8:inst1
+}
+# macro_sequence
+
+# end
+# entity
+shifter_4
+# storage
+db|ALU8_with_Microinstruction.(10).cnf
+db|ALU8_with_Microinstruction.(10).cnf
+# case_insensitive
+# source_file
+shifter_4.bdf
+eff66ef5fed9439bdf93bbb342651e89
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter_8:inst1|shifter_4:inst
+shifter_8:inst1|shifter_4:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

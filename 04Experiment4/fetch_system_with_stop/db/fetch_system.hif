@@ -1,0 +1,169 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+counter_with_set_256
+# storage
+db|fetch_system.(1).cnf
+db|fetch_system.(1).cnf
+# case_insensitive
+# source_file
+counter_with_set_256.bdf
+a533ef96440faa7af27dfdb1757362
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_256:inst
+counter_with_set_256:inst6
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_16
+# storage
+db|fetch_system.(2).cnf
+db|fetch_system.(2).cnf
+# case_insensitive
+# source_file
+counter_with_set_16.bdf
+f5b8337a924846d176b51bf38834b4ba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_256:inst|counter_with_set_16:inst
+counter_with_set_256:inst|counter_with_set_16:inst1
+counter_with_set_256:inst6|counter_with_set_16:inst
+counter_with_set_256:inst6|counter_with_set_16:inst1
+}
+# macro_sequence
+
+# end
+# entity
+multiplexer2_1
+# storage
+db|fetch_system.(3).cnf
+db|fetch_system.(3).cnf
+# case_insensitive
+# source_file
+multiplexer2_1.bdf
+2be86e6ca8c21668e1a5c937dbe478f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+multiplexer2_1:inst2
+}
+# macro_sequence
+
+# end
+# entity
+register8_with_clrn
+# storage
+db|fetch_system.(4).cnf
+db|fetch_system.(4).cnf
+# case_insensitive
+# source_file
+register8_with_clrn.bdf
+152acab8b43e461927f1545eb5d3df71
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_with_clrn:inst1
+}
+# macro_sequence
+
+# end
+# entity
+register8_with_clrn_tri
+# storage
+db|fetch_system.(5).cnf
+db|fetch_system.(5).cnf
+# case_insensitive
+# source_file
+register8_with_clrn_tri.bdf
+8febe12b86c28e1a55e4694b939d9b51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_with_clrn_tri:inst3
+}
+# macro_sequence
+
+# end
+# entity
+fetch_system
+# storage
+db|fetch_system.(0).cnf
+db|fetch_system.(0).cnf
+# case_insensitive
+# source_file
+fetch_system.bdf
+3435854c56b1c2774d95806eecb5d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+start_and_stop
+# storage
+db|fetch_system.(6).cnf
+db|fetch_system.(6).cnf
+# case_insensitive
+# source_file
+start_and_stop.bdf
+184080b9cb3489a916285a6eac70b750
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+start_and_stop:inst5
+}
+# macro_sequence
+
+# end
+# complete
+

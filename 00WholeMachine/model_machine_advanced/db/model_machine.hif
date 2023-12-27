@@ -1,0 +1,638 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+counter_with_set_256
+# storage
+db|model_machine.(1).cnf
+db|model_machine.(1).cnf
+# case_insensitive
+# source_file
+counter_with_set_256.bdf
+a533ef96440faa7af27dfdb1757362
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_16
+# storage
+db|model_machine.(2).cnf
+db|model_machine.(2).cnf
+# case_insensitive
+# source_file
+counter_with_set_16.bdf
+7ae18b76e4b4336f7b76e8a56f7942b2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+multiplexer2_1
+# storage
+db|model_machine.(3).cnf
+db|model_machine.(3).cnf
+# case_insensitive
+# source_file
+multiplexer2_1.bdf
+2be86e6ca8c21668e1a5c937dbe478f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+multiplexer2_1:inst8
+multiplexer2_1:inst1
+multiplexer2_1:inst58
+multiplexer2_1:inst2
+multiplexer2_1:inst52
+}
+# macro_sequence
+
+# end
+# entity
+register8_with_clrn
+# storage
+db|model_machine.(4).cnf
+db|model_machine.(4).cnf
+# case_insensitive
+# source_file
+register8_with_clrn.bdf
+152acab8b43e461927f1545eb5d3df71
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_with_clrn:inst7
+register8_with_clrn:inst38
+register8_with_clrn:inst29
+register8_with_clrn:inst15
+register8_with_clrn:inst10
+}
+# macro_sequence
+
+# end
+# entity
+decoder3_8
+# storage
+db|model_machine.(5).cnf
+db|model_machine.(5).cnf
+# case_insensitive
+# source_file
+decoder3_8.bdf
+97d671c23369548a75ced54268523c3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decoder3_8:inst32
+}
+# macro_sequence
+
+# end
+# entity
+decoder2_4
+# storage
+db|model_machine.(7).cnf
+db|model_machine.(7).cnf
+# case_insensitive
+# source_file
+decoder2_4.bdf
+35c756a43c1cb57c254bf97621f9992
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decoder2_4:inst23
+register8_group4:inst5|decoder2_4:inst15
+register8_group4:inst5|decoder2_4:inst3
+register8_group4:inst5|decoder2_4:inst4
+decoder2_4:inst55
+decoder2_4:inst45
+decoder2_4:inst24
+decoder2_4:inst25
+}
+# macro_sequence
+
+# end
+# entity
+ALU8_with_set_model
+# storage
+db|model_machine.(8).cnf
+db|model_machine.(8).cnf
+# case_insensitive
+# source_file
+ALU8_with_set_model.bdf
+14dcabe6159a47361f376cc755e736
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_set_model:inst
+ALU8_with_set_model:inst54
+}
+# macro_sequence
+
+# end
+# entity
+register8_group4
+# storage
+db|model_machine.(11).cnf
+db|model_machine.(11).cnf
+# case_insensitive
+# source_file
+register8_group4.bdf
+de1eb1799be1141f2a8cd31e96c5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_group4:inst5
+}
+# macro_sequence
+
+# end
+# entity
+multiplexer4_1
+# storage
+db|model_machine.(12).cnf
+db|model_machine.(12).cnf
+# case_insensitive
+# source_file
+multiplexer4_1.bdf
+55da62fab4d74c443895c6b32189833
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_group4:inst5|multiplexer4_1:inst1
+register8_group4:inst5|multiplexer4_1:inst
+}
+# macro_sequence
+
+# end
+# entity
+register8_with_clrn_tri
+# storage
+db|model_machine.(13).cnf
+db|model_machine.(13).cnf
+# case_insensitive
+# source_file
+register8_with_clrn_tri.bdf
+8febe12b86c28e1a55e4694b939d9b51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register8_group4:inst5|register8_with_clrn_tri:inst29
+register8_group4:inst5|register8_with_clrn_tri:inst30
+register8_group4:inst5|register8_with_clrn_tri:inst31
+register8_group4:inst5|register8_with_clrn_tri:inst32
+}
+# macro_sequence
+
+# end
+# entity
+tri_state_gate_8
+# storage
+db|model_machine.(14).cnf
+db|model_machine.(14).cnf
+# case_insensitive
+# source_file
+tri_state_gate_8.bdf
+ac3b5be7841592787bbf7e222e3bd0fa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+tri_state_gate_8:inst12
+tri_state_gate_8:inst13
+tri_state_gate_8:inst21
+}
+# macro_sequence
+
+# end
+# entity
+condition_getter
+# storage
+db|model_machine.(15).cnf
+db|model_machine.(15).cnf
+# case_insensitive
+# source_file
+condition_getter.bdf
+fa5bdc1e5fcd636b216abb5f96328
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+condition_getter:inst11
+}
+# macro_sequence
+
+# end
+# entity
+start_and_stop
+# storage
+db|model_machine.(6).cnf
+db|model_machine.(6).cnf
+# case_insensitive
+# source_file
+start_and_stop.bdf
+dc7b28d873bfa46f9a6b2ee32a8987
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_8_advanced
+# storage
+db|model_machine.(9).cnf
+db|model_machine.(9).cnf
+# case_insensitive
+# source_file
+counter_with_set_8_advanced.bdf
+239a9456a4dd5756aea1047b89ae40
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_8_advanced:inst16
+counter_with_set_8_advanced:inst56
+}
+# macro_sequence
+
+# end
+# entity
+shifter_8
+# storage
+db|model_machine.(20).cnf
+db|model_machine.(20).cnf
+# case_insensitive
+# source_file
+shifter_8.bdf
+7ff1313c9fb5484d8dc1a9cfd4d914e2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter_8:inst60
+}
+# macro_sequence
+
+# end
+# entity
+shifter_4
+# storage
+db|model_machine.(21).cnf
+db|model_machine.(21).cnf
+# case_insensitive
+# source_file
+shifter_4.bdf
+eff66ef5fed9439bdf93bbb342651e89
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter_8:inst60|shifter_4:inst
+shifter_8:inst60|shifter_4:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AND2_8
+# storage
+db|model_machine.(22).cnf
+db|model_machine.(22).cnf
+# case_insensitive
+# source_file
+AND2_8.bdf
+c62cee771b5954e8da20d6589e86269c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AND2_8:inst62
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|model_machine.(10).cnf
+db|model_machine.(10).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+ENT
+-1
+3
+ENP
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+}
+# include_file {
+..|..|..|mc_00|quartus ii|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+counter_with_set_8_advanced:inst16|74161:inst2
+counter_with_set_8_advanced:inst56|74161:inst2
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|model_machine.(16).cnf
+db|model_machine.(16).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_8_advanced:inst16|74161:inst2|f74161:sub
+counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub
+counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub
+counter_with_set_8_advanced:inst56|74161:inst3|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|model_machine.(17).cnf
+db|model_machine.(17).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# include_file {
+..|..|..|mc_00|quartus ii|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+counter_with_set_8_advanced:inst16|74161:inst3
+counter_with_set_8_advanced:inst56|74161:inst3
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|model_machine.(18).cnf
+db|model_machine.(18).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_set_model:inst|74181:inst
+ALU8_with_set_model:inst|74181:inst1
+ALU8_with_set_model:inst54|74181:inst
+ALU8_with_set_model:inst54|74181:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74182
+# storage
+db|model_machine.(19).cnf
+db|model_machine.(19).cnf
+# case_insensitive
+# source_file
+..|..|..|mc_00|quartus ii|quartus|libraries|others|maxplus2|74182.bdf
+7e848f93ad7899d68043667228e561f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU8_with_set_model:inst|74182:inst2
+ALU8_with_set_model:inst54|74182:inst2
+}
+# macro_sequence
+
+# end
+# entity
+model_machine
+# storage
+db|model_machine.(0).cnf
+db|model_machine.(0).cnf
+# case_insensitive
+# source_file
+model_machine.bdf
+e41fb57147d3d164155e6dd96a7d1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.888 ns
+From           : uIR15
+To             : register8_with_clrn:inst29|inst14
+From Clock     : --
+To Clock       : START_CP
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.471 ns
+From           : register8_with_clrn:inst10|inst16
+To             : RAMADDRESS0
+From Clock     : uIR9
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.233 ns
+From           : uIR3
+To             : WR
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.591 ns
+From           : uIR18
+To             : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|99
+From Clock     : --
+To Clock       : uIR0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 91.14 MHz ( period = 10.972 ns )
+From           : register8_with_clrn:inst29|inst16
+To             : counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub|99
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 0
+
+Type           : Clock Setup: 'START_CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 92.47 MHz ( period = 10.814 ns )
+From           : register8_with_clrn:inst29|inst16
+To             : counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub|99
+From Clock     : START_CP
+To Clock       : START_CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR9'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 92.48 MHz ( period = 10.813 ns )
+From           : register8_with_clrn:inst29|inst16
+To             : counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub|99
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR10'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 93.87 MHz ( period = 10.653 ns )
+From           : register8_with_clrn:inst29|inst16
+To             : counter_with_set_8_advanced:inst56|74161:inst2|f74161:sub|99
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 343.41 MHz ( period = 2.912 ns )
+From           : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|9
+To             : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|99
+From Clock     : uIR0
+To Clock       : uIR0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 343.41 MHz ( period = 2.912 ns )
+From           : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|9
+To             : counter_with_set_8_advanced:inst16|74161:inst3|f74161:sub|99
+From Clock     : uIR1
+To Clock       : uIR1
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

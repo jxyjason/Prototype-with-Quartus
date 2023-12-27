@@ -1,0 +1,45 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+register8_with_clrn_tri
+# storage
+db|register8_with_clrn_tri.(0).cnf
+db|register8_with_clrn_tri.(0).cnf
+# case_insensitive
+# source_file
+register8_with_clrn_tri.bdf
+8febe12b86c28e1a55e4694b939d9b51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

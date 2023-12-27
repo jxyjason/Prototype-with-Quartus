@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat May 21 20:08:44 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : shifter_8
+Top-level Entity Name : shifter_8
+Family : Cyclone II
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

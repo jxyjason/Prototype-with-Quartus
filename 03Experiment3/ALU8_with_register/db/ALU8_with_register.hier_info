@@ -1,0 +1,395 @@
+|ALU8_with_register
+C7 <= register-8:inst3.Q7
+CPC => register-8:inst3.CP
+CPA => register-8:inst2.CP
+A7 => register-8:inst2.D7
+A7 => register-8:inst1.D7
+A6 => register-8:inst2.D6
+A6 => register-8:inst1.D6
+A5 => register-8:inst2.D5
+A5 => register-8:inst1.D5
+A4 => register-8:inst2.D4
+A4 => register-8:inst1.D4
+A3 => register-8:inst2.D3
+A3 => register-8:inst1.D3
+A2 => register-8:inst2.D2
+A2 => register-8:inst1.D2
+A1 => register-8:inst2.D1
+A1 => register-8:inst1.D1
+A0 => register-8:inst2.D0
+A0 => register-8:inst1.D0
+CPB => register-8:inst1.CP
+M => ALU8_with_set_model:inst.M
+S0 => ALU8_with_set_model:inst.S0
+S1 => ALU8_with_set_model:inst.S1
+S2 => ALU8_with_set_model:inst.S2
+S3 => ALU8_with_set_model:inst.S3
+CN => ALU8_with_set_model:inst.CN
+C6 <= register-8:inst3.Q6
+C5 <= register-8:inst3.Q5
+C4 <= register-8:inst3.Q4
+C3 <= register-8:inst3.Q3
+C2 <= register-8:inst3.Q2
+C1 <= register-8:inst3.Q1
+C0 <= register-8:inst3.Q0
+C8 <= ALU8_with_set_model:inst.F8
+
+
+|ALU8_with_register|register-8:inst3
+Q7 <= register-4:inst.Q3
+CP => register-4:inst.CP
+CP => register-4:inst1.CP
+D7 => register-4:inst.D3
+D6 => register-4:inst.D2
+D5 => register-4:inst.D1
+D4 => register-4:inst.D0
+Q6 <= register-4:inst.Q2
+Q5 <= register-4:inst.Q1
+Q4 <= register-4:inst.Q0
+Q3 <= register-4:inst1.Q3
+D3 => register-4:inst1.D3
+D2 => register-4:inst1.D2
+D1 => register-4:inst1.D1
+D0 => register-4:inst1.D0
+Q2 <= register-4:inst1.Q2
+Q1 <= register-4:inst1.Q1
+Q0 <= register-4:inst1.Q0
+
+
+|ALU8_with_register|register-8:inst3|register-4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|ALU8_with_register|register-8:inst3|register-4:inst1
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|ALU8_with_register|ALU8_with_set_model:inst
+F4 <= 74181:inst.F0N
+B4 => 74181:inst.B0N
+A4 => 74181:inst.A0N
+A5 => 74181:inst.A1N
+B5 => 74181:inst.B1N
+A7 => 74181:inst.A3N
+B6 => 74181:inst.B2N
+A6 => 74181:inst.A2N
+M => 74181:inst.M
+M => 74181:inst1.M
+CN => inst11.IN0
+B0 => 74181:inst1.B0N
+A0 => 74181:inst1.A0N
+A1 => 74181:inst1.A1N
+B1 => 74181:inst1.B1N
+A3 => 74181:inst1.A3N
+B2 => 74181:inst1.B2N
+A2 => 74181:inst1.A2N
+B3 => 74181:inst1.B3N
+S2 => 74181:inst1.S2
+S2 => 74181:inst.S2
+S1 => 74181:inst1.S1
+S1 => 74181:inst.S1
+S0 => 74181:inst1.S0
+S0 => 74181:inst.S0
+S3 => 74181:inst1.S3
+S3 => 74181:inst.S3
+B7 => 74181:inst.B3N
+F5 <= 74181:inst.F1N
+F6 <= 74181:inst.F2N
+F7 <= 74181:inst.F3N
+F0 <= 74181:inst1.F0N
+F1 <= 74181:inst1.F1N
+F2 <= 74181:inst1.F2N
+F3 <= 74181:inst1.F3N
+F8 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU8_with_register|ALU8_with_set_model:inst|74181:inst
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU8_with_register|ALU8_with_set_model:inst|74182:inst2
+GN <= 24.DB_MAX_OUTPUT_PORT_TYPE
+GN3 => 11.IN0
+GN3 => 12.IN2
+GN3 => 13.IN2
+GN3 => 14.IN1
+GN2 => 11.IN1
+GN2 => 12.IN1
+GN2 => 13.IN0
+GN2 => 15.IN0
+GN2 => 16.IN0
+GN2 => 17.IN2
+GN2 => 18.IN0
+GN1 => 11.IN2
+GN1 => 12.IN3
+GN1 => 15.IN1
+GN1 => 16.IN2
+GN1 => 17.IN0
+GN1 => 21.IN0
+GN1 => 20.IN2
+GN1 => 19.IN1
+GN0 => 11.IN3
+GN0 => 15.IN2
+GN0 => 16.IN3
+GN0 => 20.IN0
+GN0 => 19.IN2
+GN0 => 22.IN0
+GN0 => 23.IN0
+PN1 => 12.IN0
+PN1 => 10.IN2
+PN1 => 17.IN1
+PN1 => 21.IN1
+PN2 => 13.IN1
+PN2 => 10.IN1
+PN2 => 18.IN1
+PN3 => 14.IN0
+PN3 => 10.IN0
+PN <= 10.DB_MAX_OUTPUT_PORT_TYPE
+PN0 => 10.IN3
+PN0 => 16.IN1
+PN0 => 20.IN1
+PN0 => 23.IN1
+CZ <= 27.DB_MAX_OUTPUT_PORT_TYPE
+CI => 33.IN0
+CY <= 29.DB_MAX_OUTPUT_PORT_TYPE
+CX <= 31.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU8_with_register|ALU8_with_set_model:inst|74181:inst1
+F1N <= 86.DB_MAX_OUTPUT_PORT_TYPE
+A1N => 14.IN0
+A1N => 13.IN2
+A1N => 44.IN0
+S3 => 14.IN1
+S3 => 9.IN1
+S3 => 24.IN1
+S3 => 19.IN1
+B1N => 14.IN2
+B1N => 28.IN0
+B1N => 11.IN1
+S2 => 13.IN1
+S2 => 8.IN1
+S2 => 23.IN1
+S2 => 18.IN1
+S0 => 11.IN0
+S0 => 6.IN0
+S0 => 21.IN0
+S0 => 16.IN0
+S1 => 12.IN1
+S1 => 7.IN1
+S1 => 22.IN1
+S1 => 17.IN1
+M => 98.IN0
+A0N => 9.IN0
+A0N => 8.IN2
+A0N => 43.IN0
+B0N => 9.IN2
+B0N => 27.IN0
+B0N => 6.IN1
+CN => 66.IN2
+CN => 73.IN0
+CN => 73.IN3
+CN => 69.IN0
+CN => 64.IN0
+CN => 61.IN4
+CN => 61.IN5
+AEQB <= 83.DB_MAX_OUTPUT_PORT_TYPE
+A3N => 24.IN0
+A3N => 23.IN2
+A3N => 51.IN0
+B3N => 24.IN2
+B3N => 25.IN0
+B3N => 21.IN1
+A2N => 19.IN0
+A2N => 18.IN2
+A2N => 45.IN0
+B2N => 19.IN2
+B2N => 31.IN0
+B2N => 16.IN1
+F2N <= 85.DB_MAX_OUTPUT_PORT_TYPE
+F3N <= 84.DB_MAX_OUTPUT_PORT_TYPE
+PN <= 60.DB_MAX_OUTPUT_PORT_TYPE
+CN4 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+GN <= 63.DB_MAX_OUTPUT_PORT_TYPE
+F0N <= 87.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU8_with_register|register-8:inst2
+Q7 <= register-4:inst.Q3
+CP => register-4:inst.CP
+CP => register-4:inst1.CP
+D7 => register-4:inst.D3
+D6 => register-4:inst.D2
+D5 => register-4:inst.D1
+D4 => register-4:inst.D0
+Q6 <= register-4:inst.Q2
+Q5 <= register-4:inst.Q1
+Q4 <= register-4:inst.Q0
+Q3 <= register-4:inst1.Q3
+D3 => register-4:inst1.D3
+D2 => register-4:inst1.D2
+D1 => register-4:inst1.D1
+D0 => register-4:inst1.D0
+Q2 <= register-4:inst1.Q2
+Q1 <= register-4:inst1.Q1
+Q0 <= register-4:inst1.Q0
+
+
+|ALU8_with_register|register-8:inst2|register-4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|ALU8_with_register|register-8:inst2|register-4:inst1
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|ALU8_with_register|register-8:inst1
+Q7 <= register-4:inst.Q3
+CP => register-4:inst.CP
+CP => register-4:inst1.CP
+D7 => register-4:inst.D3
+D6 => register-4:inst.D2
+D5 => register-4:inst.D1
+D4 => register-4:inst.D0
+Q6 <= register-4:inst.Q2
+Q5 <= register-4:inst.Q1
+Q4 <= register-4:inst.Q0
+Q3 <= register-4:inst1.Q3
+D3 => register-4:inst1.D3
+D2 => register-4:inst1.D2
+D1 => register-4:inst1.D1
+D0 => register-4:inst1.D0
+Q2 <= register-4:inst1.Q2
+Q1 <= register-4:inst1.Q1
+Q0 <= register-4:inst1.Q0
+
+
+|ALU8_with_register|register-8:inst1|register-4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|ALU8_with_register|register-8:inst1|register-4:inst1
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+

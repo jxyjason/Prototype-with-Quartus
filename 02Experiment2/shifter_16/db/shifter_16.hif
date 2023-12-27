@@ -1,0 +1,68 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+shifter_4
+# storage
+db|shifter_16.(1).cnf
+db|shifter_16.(1).cnf
+# case_insensitive
+# source_file
+shifter_4.bdf
+eff66ef5fed9439bdf93bbb342651e89
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter_4:inst
+shifter_4:inst1
+shifter_4:inst2
+shifter_4:inst3
+}
+# macro_sequence
+
+# end
+# entity
+shifter_16
+# storage
+db|shifter_16.(0).cnf
+db|shifter_16.(0).cnf
+# case_insensitive
+# source_file
+shifter_16.bdf
+56d4477a848525ad6df69297a38dde72
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,37 @@
+|shifter_4
+Q0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+DM => inst13.IN0
+DM => inst9.IN0
+DM => inst5.IN0
+DM => inst1.IN0
+A0 => inst13.IN1
+A0 => inst8.IN1
+A0 => inst18.IN1
+RM => inst14.IN0
+RM => inst10.IN0
+RM => inst6.IN0
+RM => inst2.IN0
+RM => inst18.IN0
+A1 => inst14.IN1
+A1 => inst9.IN1
+A1 => inst4.IN1
+LM => inst12.IN0
+LM => inst8.IN0
+LM => inst4.IN0
+LM => inst.IN0
+LM => inst16.IN1
+LI => inst12.IN1
+Q1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst10.IN1
+A2 => inst5.IN1
+A2 => inst.IN1
+Q2 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst6.IN1
+A3 => inst1.IN1
+A3 => inst16.IN0
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+RI => inst2.IN1
+LO <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+RO <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 10 19:23:34 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : register-16
+Top-level Entity Name : register-16
+Family : Cyclone II
+Total logic elements : 16
+    Total combinational functions : 0
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

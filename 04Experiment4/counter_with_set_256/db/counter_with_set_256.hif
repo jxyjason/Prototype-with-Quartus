@@ -1,0 +1,66 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+counter_with_set_256
+# storage
+db|counter_with_set_256.(0).cnf
+db|counter_with_set_256.(0).cnf
+# case_insensitive
+# source_file
+counter_with_set_256.bdf
+a533ef96440faa7af27dfdb1757362
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+counter_with_set_16
+# storage
+db|counter_with_set_256.(1).cnf
+db|counter_with_set_256.(1).cnf
+# case_insensitive
+# source_file
+counter_with_set_16.bdf
+7ae18b76e4b4336f7b76e8a56f7942b2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter_with_set_16:inst
+counter_with_set_16:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

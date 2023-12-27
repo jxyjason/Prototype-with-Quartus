@@ -1,0 +1,93 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		fetch_system_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY fetch_system
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:16:59  MARCH 31, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name BDF_FILE fetch_system.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "D:/JiSuanJiZuZhiYuJieGou/Experiment4/fetch_system/fetch_system.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_77 -to ROMI0
+set_location_assignment PIN_80 -to ROMI1
+set_location_assignment PIN_81 -to ROMI2
+set_location_assignment PIN_82 -to ROMI3
+set_location_assignment PIN_84 -to ROMI4
+set_location_assignment PIN_86 -to ROMI5
+set_location_assignment PIN_87 -to ROMI6
+set_location_assignment PIN_88 -to ROMI7
+set_location_assignment PIN_67 -to ROMCLRN
+set_location_assignment PIN_68 -to ROMDFF
+set_location_assignment PIN_69 -to CLRN_PC
+set_location_assignment PIN_132 -to CP
+set_location_assignment PIN_61 -to CPuIR
+set_location_assignment PIN_89 -to EN_MBR
+set_location_assignment PIN_97 -to MARCP
+set_location_assignment PIN_94 -to MARY
+set_location_assignment PIN_96 -to MBRCP
+set_location_assignment PIN_99 -to PCCP
+set_location_assignment PIN_95 -to PCY
+set_location_assignment PIN_168 -to RAMA0
+set_location_assignment PIN_169 -to RAMA1
+set_location_assignment PIN_170 -to RAMA2
+set_location_assignment PIN_171 -to RAMA3
+set_location_assignment PIN_173 -to RAMA4
+set_location_assignment PIN_175 -to RAMA5
+set_location_assignment PIN_176 -to RAMA6
+set_location_assignment PIN_179 -to RAMA7
+set_location_assignment PIN_192 -to RAMD0
+set_location_assignment PIN_193 -to RAMD1
+set_location_assignment PIN_195 -to RAMD2
+set_location_assignment PIN_197 -to RAMD3
+set_location_assignment PIN_198 -to RAMD4
+set_location_assignment PIN_199 -to RAMD5
+set_location_assignment PIN_200 -to RAMD6
+set_location_assignment PIN_201 -to RAMD7
+set_location_assignment PIN_90 -to RDI
+set_location_assignment PIN_63 -to RDO
+set_location_assignment PIN_180 -to ROMA0
+set_location_assignment PIN_181 -to ROMA1
+set_location_assignment PIN_182 -to ROMA2
+set_location_assignment PIN_185 -to ROMA3
+set_location_assignment PIN_187 -to ROMA4
+set_location_assignment PIN_188 -to ROMA5
+set_location_assignment PIN_189 -to ROMA6
+set_location_assignment PIN_191 -to ROMA7
+set_location_assignment PIN_60 -to uRD
+set_location_assignment PIN_92 -to WRI
+set_location_assignment PIN_64 -to WRO
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

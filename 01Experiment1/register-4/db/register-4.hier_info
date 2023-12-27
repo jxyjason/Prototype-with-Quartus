@@ -1,0 +1,15 @@
+|register-4
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst.CLK
+CP => inst1.CLK
+CP => inst2.CLK
+CP => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+

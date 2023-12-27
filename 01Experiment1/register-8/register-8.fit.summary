@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Mar 07 17:12:50 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : register-8
+Top-level Entity Name : register-8
+Family : Cyclone II
+Device : EP2C8Q208C8
+Timing Models : Final
+Total logic elements : 8 / 8,256 ( < 1 % )
+    Total combinational functions : 0 / 8,256 ( 0 % )
+    Dedicated logic registers : 8 / 8,256 ( < 1 % )
+Total registers : 8
+Total pins : 17 / 138 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 165,888 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

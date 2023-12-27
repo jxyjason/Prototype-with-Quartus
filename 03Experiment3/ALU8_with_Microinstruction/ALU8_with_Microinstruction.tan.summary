@@ -1,0 +1,186 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.197 ns
+From           : DFF
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : --
+To Clock       : I6
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.489 ns
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : O7
+From Clock     : CP
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.078 ns
+From           : S0
+To             : C8
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 17.224 ns
+From           : I6
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst4~_emulated
+From Clock     : --
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'DFF'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 52.53 MHz ( period = 19.037 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : DFF
+To Clock       : DFF
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLRN'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 53.14 MHz ( period = 18.818 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : CLRN
+To Clock       : CLRN
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 183.28 MHz ( period = 5.456 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst1|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst1|inst2~_emulated
+From Clock     : I0
+To Clock       : I0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 183.28 MHz ( period = 5.456 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst1|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst1|inst2~_emulated
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I4'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 320.20 MHz ( period = 3.123 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+From Clock     : I4
+To Clock       : I4
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 320.20 MHz ( period = 3.123 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+From Clock     : I3
+To Clock       : I3
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 320.20 MHz ( period = 3.123 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+From Clock     : I2
+To Clock       : I2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 320.20 MHz ( period = 3.123 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst2~_emulated
+From Clock     : I1
+To Clock       : I1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I5'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst4~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst4~_emulated
+From Clock     : I5
+To Clock       : I5
+Failed Paths   : 0
+
+Type           : Clock Setup: 'I6'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : I6
+To Clock       : I6
+Failed Paths   : 0
+
+Type           : Clock Hold: 'DFF'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : DFF
+To Clock       : DFF
+Failed Paths   : 6
+
+Type           : Clock Hold: 'CLRN'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+To             : counter_with_set_256:inst18|counter_with_set_16:inst|inst6~_emulated
+From Clock     : CLRN
+To Clock       : CLRN
+Failed Paths   : 6
+
+Type           : Clock Hold: 'CP'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : ALU8_with_register:inst|register-8:inst1|register-4:inst|inst2
+To             : ALU8_with_register:inst|register-8:inst3|register-4:inst|inst2
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 72
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 84
+
+--------------------------------------------------------------------------------------
+

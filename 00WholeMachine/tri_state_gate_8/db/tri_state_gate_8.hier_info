@@ -1,0 +1,27 @@
+|tri_state_gate_8
+O7 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+I7 => inst.DATAIN
+EN => inst.OE
+EN => inst6.OE
+EN => inst8.OE
+EN => inst7.OE
+EN => inst10.OE
+EN => inst9.OE
+EN => inst11.OE
+EN => inst12.OE
+O6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I6 => inst6.DATAIN
+O5 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+I5 => inst8.DATAIN
+O4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+I4 => inst7.DATAIN
+O3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+I3 => inst10.DATAIN
+O2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+I2 => inst9.DATAIN
+O1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst11.DATAIN
+O0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst12.DATAIN
+
+

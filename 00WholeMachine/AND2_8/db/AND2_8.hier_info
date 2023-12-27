@@ -1,0 +1,27 @@
+|AND2_8
+O7 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D5 => inst.IN0
+D5 => inst1.IN0
+D5 => inst2.IN0
+D5 => inst3.IN0
+D5 => inst4.IN0
+D5 => inst5.IN0
+D5 => inst6.IN0
+D5 => inst7.IN0
+I7 => inst.IN1
+O6 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+I6 => inst1.IN1
+O5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I5 => inst2.IN1
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I4 => inst3.IN1
+O3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I3 => inst4.IN1
+O2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+I2 => inst5.IN1
+O1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst6.IN1
+O0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst7.IN1
+
+

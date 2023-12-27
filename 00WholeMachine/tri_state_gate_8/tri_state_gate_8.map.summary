@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 17 17:07:32 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : tri_state_gate_8
+Top-level Entity Name : tri_state_gate_8
+Family : Cyclone II
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

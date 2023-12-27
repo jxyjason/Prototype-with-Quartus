@@ -1,0 +1,48 @@
+|counter_256
+Q7 <= counter_16:inst.Q3
+CP => counter_16:inst1.CP
+PRN => counter_16:inst1.PRN
+PRN => counter_16:inst.PRN
+CLRN => counter_16:inst1.CLRN
+CLRN => counter_16:inst.CLRN
+Q6 <= counter_16:inst.Q2
+Q5 <= counter_16:inst.Q1
+Q4 <= counter_16:inst.Q0
+Q3 <= counter_16:inst1.Q3
+Q2 <= counter_16:inst1.Q2
+Q1 <= counter_16:inst1.Q1
+Q0 <= counter_16:inst1.Q0
+
+
+|counter_256|counter_16:inst
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+CLRN => inst1.ACLR
+CLRN => inst.ACLR
+CLRN => inst3.ACLR
+CP => inst.CLK
+PRN => inst.PRESET
+PRN => inst1.PRESET
+PRN => inst2.PRESET
+PRN => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_256|counter_16:inst1
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+CLRN => inst1.ACLR
+CLRN => inst.ACLR
+CLRN => inst3.ACLR
+CP => inst.CLK
+PRN => inst.PRESET
+PRN => inst1.PRESET
+PRN => inst2.PRESET
+PRN => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

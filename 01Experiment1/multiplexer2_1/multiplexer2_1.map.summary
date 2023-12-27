@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 10 20:44:02 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : multiplexer2_1
+Top-level Entity Name : multiplexer2_1
+Family : Cyclone II
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 03 14:21:30 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : fetch_system
+Top-level Entity Name : fetch_system
+Family : Cyclone II
+Total logic elements : 60
+    Total combinational functions : 60
+    Dedicated logic registers : 29
+Total registers : 29
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

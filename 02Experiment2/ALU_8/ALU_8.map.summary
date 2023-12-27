@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 16 20:38:14 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : ALU_8
+Top-level Entity Name : ALU_8
+Family : Cyclone II
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
