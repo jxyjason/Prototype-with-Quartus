@@ -1,6 +1,8 @@
 # Prototype-with-Quartus
 A prototype designed by Quartus, by simulating the structural design of the CPU.
 
+*如果觉得有帮助的话，请多多**star**，喜欢的人多了我就去把各个实验的细节补充一下*
+
 ## 项目介绍
 此项目动机为山东大学软件学院2020级计算机组织与结构课程设计，此项目完成了实验一到实验四、模型机的设计和模型机的扩展。2020级题目详见ppt，此项目内容如下：
 - Experiment1-4实现了实验一到实验四，这些基本上每年是固定的
